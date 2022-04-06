@@ -36,8 +36,9 @@
   <main class="main-container">
     <h1 class="main-container__title">Каталог продукции</h1>
     <section class="catalog">
-      <ul class="catalog__list products">
-        <li class="products__item product">
+      <div class="catalog__list products">
+        <h2 class="visually-hidden">Список продукции.</h2>
+        <article class="products__item product">
           <a class="product__image" href="#"></a>
           <div class="product__info">
             <h3 class="product__title">Cat Energy PRO 500 г</h3>
@@ -57,9 +58,9 @@
             </table>
           </div>
           <a class="product__link" href="#">Заказать</a>
-        </li>
+        </article>
 
-        <li class="products__item product">
+        <article class="products__item product">
           <a class="product__image" href="#"></a>
           <div class="product__info">
             <h3 class="product__title">Cat Energy PRO 1000 г</h3>
@@ -79,9 +80,9 @@
             </table>
           </div>
           <a class="product__link" href="#">Заказать</a>
-        </li>
+        </article>
 
-        <li class="products__item product">
+        <article class="products__item product">
           <a class="product__image" href="#"></a>
           <div class="product__info">
             <h3 class="product__title">Cat Energy PRO 500 г</h3>
@@ -101,9 +102,9 @@
             </table>
           </div>
           <a class="product__link" href="#">Заказать</a>
-        </li>
+        </article>
 
-        <li class="products__item product">
+        <article class="products__item product">
           <a class="product__image" href="#"></a>
           <div class="product__info">
             <h3 class="product__title">Cat Energy PRO 1000 г</h3>
@@ -123,9 +124,9 @@
             </table>
           </div>
           <a class="product__link" href="#">Заказать</a>
-        </li>
+        </article>
 
-        <li class="products__item product">
+        <article class="products__item product">
           <a class="product__image" href="#"></a>
           <div class="product__info">
             <h3 class="product__title">Cat Energy SLIM 500 г</h3>
@@ -145,9 +146,9 @@
             </table>
           </div>
           <a class="product__link" href="#">Заказать</a>
-        </li>
+        </article>
 
-        <li class="products__item product">
+        <article class="products__item product">
           <a class="product__image" href="#"></a>
           <div class="product__info">
             <h3 class="product__title">Cat Energy SLIM 1000 г</h3>
@@ -167,9 +168,9 @@
             </table>
           </div>
           <a class="product__link" href="#">Заказать</a>
-        </li>
+        </article>
 
-        <li class="products__item product">
+        <article class="products__item product">
           <a class="product__image" href="#"></a>
           <div class="product__info">
             <h3 class="product__title">Cat Energy SLIM 500 г</h3>
@@ -189,14 +190,14 @@
             </table>
           </div>
           <a class="product__link" href="#">Заказать</a>
-        </li>
+        </article>
 
-        <li class="products__item catalog-all">
+        <article class="products__item catalog-all">
           <p class="catalog-all__show">Показать еще 100500 товаров</p>
           <p class="catalog-all__crumbs">На самом деле вкусов гораздо больше!</p>
-          <a class="catalog-all__link">Показать все</a>
-        </li>
-      </ul>
+          <a class="catalog-all__link" href="">Показать все</a>
+        </article>
+      </div>
     </section>
 
     <section class="additional-product">
@@ -205,45 +206,39 @@
         <ul class="additional-product__list">
           <li class="additional-product__item">
             <h3 class="additional-product__title">Сахарозаменитель</h3>
-            <table class="additional-product__description">
-              <tr class="additional-product__row">
-                <td class="additional-product__cell">1 упаковка (100 г)</td>
-                <td class="additional-product__cell">200 Р.</td>
-              </tr>
-            </table>
+              <ul class="additional-product__description">
+                <li class="additional-product__count">1 упаковка (100 г)</li>
+                <li class="additional-product__price">200 Р.</li>
+              </ul>
             <a class="additional-product__link" href="#">Заказать</a>
           </li>
 
           <li class="additional-product__item">
             <h3 class="additional-product__title">Питьевая вода</h3>
-            <table class="additional-product__description">
-              <tr class="additional-product__row">
-                <td class="additional-product__cell">5 литров</td>
-                <td class="additional-product__cell">50 Р.</td>
-              </tr>
-            </table>
+            <div class="additional-product__description">
+              <ul class="additional-product__description">
+                <li class="additional-product__count">5 литров</li>
+                <li class="additional-product__price">50 Р.</li>
+              </ul>
+            </div>
             <a class="additional-product__link" href="#">Заказать</a>
           </li>
 
           <li class="additional-product__item">
             <h3 class="additional-product__title">Молоко</h3>
-            <table class="additional-product__description">
-              <tr class="additional-product__row">
-                <td class="additional-product__cell">1 литр</td>
-                <td class="additional-product__cell">100 Р.</td>
-              </tr>
-            </table>
+            <ul class="additional-product__description">
+              <li class="additional-product__count">1 литр</li>
+              <li class="additional-product__price">100 Р.</li>
+            </ul>
             <a class="additional-product__link" href="#">Заказать</a>
           </li>
 
           <li class="additional-product__item">
             <h3 class="additional-product__title">Витамины</h3>
-            <table class="additional-product__description">
-              <tr class="additional-product__row">
-                <td class="additional-product__cell">1 упаковка (30 г)</td>
-                <td class="additional-product__cell">300 Р.</td>
-              </tr>
-            </table>
+            <ul class="additional-product__description">
+              <li class="additional-product__count">1 упаковка (30 г)</li>
+              <li class="additional-product__price">300 Р.</li>
+            </ul>
             <a class="additional-product__link" href="#">Заказать</a>
           </li>
         </ul>
