@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html">
+      <img class="main-header__logo-mobile" src="img/header_logo-mobile.svg" width="191" height="38"
+        alt="Логотип «Кэт энерджи».">
+    </a>
+
+    <nav class="main-navigation">
+      <button class="main-navigation__toogle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+      <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <h1 class="main-container__title">Подбор программы</h1>
+
+    <form class="main-container__form form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="form__description">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
+      <ul class="form__list">
+        <li class="form__item">
+          <label class="form__label" for="form-name">Имя:*</label>
+          <input class="form__text" type="text" placeholder="Барсик" id="form-name" name="name" required>
+        </li>
+
+        <li class="form__item">
+          <label class="form__label" for="form-weight">Вес (кг):*</label>
+          <input class="form__text" type="text" placeholder="7" id="form-weight" name="weight" required>
+        </li>
+
+        <li class="form__item">
+          <label class="form__label" for="form-age">Возраст (лет):</label>
+          <input class="form__text" type="text" placeholder="7" id="form-age" name="age" required>
+        </li>
+      </ul>
+
+      <ul class="form__list">
+        <li class="form__item">
+          <input class="form__input-radio" type="radio" id="form-slim" name="slim" checked>
+          <label class="form__label" for="form-slim">Похудение</label>
+        </li>
+
+        <li class="form__item">
+          <input class="form__input-radio" type="radio" id="form-fat" name="fat">
+          <label class="form__label" for="form-slim">Набор массы</label>
+        </li>
+
+        <li class="form__item">
+          <input class="form__input-radio" type="radio" id="form-not-know" name="not-know">
+          <label class="form__label" for="form-not-know">Не знаю (Нужен ваш совет)</label>
+        </li>
+      </ul>
+
+      <fieldset class="form__fieldset">
+        <h2 class="form__legend">Контактные данные
+          (владельца кота)</h2>
+        <ul class="form__list">
+          <li class="form__item">
+            <label class="form__label" for="form-email">E-mail:*</label>
+            <input class="form__text" type="email" id="form-email" name="email" placeholder="kuklachev@gmail.com"
+              required>
+          </li>
+
+          <li class="form__item">
+            <label class="form__label" for="form-phone">Телефон:*</label>
+            <input class="form__text" type="tel" id="form-phone" name="phone" placeholder="8 (960) 900-60-90" required>
+          </li>
+        </ul>
+      </fieldset>
+
+      <div class="form__comment">
+        <h2 class="form__legend">Комментарий</h2>
+        <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота" name="comments"></textarea>
+      </div>
+
+      <fieldset class="form__fieldset">
+        <h2 class="form__legend">Дополнительно</h2>
+        <ul class="form__list">
+          <li class="form__item">
+            <input class="form__text" type="checkbox" id="form-sweetener" name="sweetener" checked>
+            <label class="form__label" for="form-sweetener">Сахарозаменитель</label>
+          </li>
+
+          <li class="form__item">
+            <input class="form__text" type="checkbox" id="form-water" name="water">
+            <label class="form__label" for="form-water">Питьевая вода</label>
+          </li>
+
+          <li class="form__item">
+            <input class="form__text" type="checkbox" id="form-milk" name="milk">
+            <label class="form__label" for="form-milk">Молоко</label>
+          </li>
+
+          <li class="form__item">
+            <input class="form__text" type="checkbox" id="form-vitamin" name="vitamin">
+            <label class="form__label" for="form-vitamin">Витамины</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <div class="form__fieldset-button fieldset-button">
+        <button class="fieldset-button__button" type="submit">Отправить заявку</button>
+        <p class="fieldset-button__text">* — Обязательные поля</p>
+      </div>
+    </form>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <a class="main-footer__logo" href="index.html">
+        <img class="main-footer__logo-image" src="img/footer-logo.svg" width="101" height="18" alt="Кэт энерджи.">
+      </a>
+
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">
+              <span class="visually-hidden">Вконтакте.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">
+              <span class="visually-hidden">Ютуб.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="#">
+              <span class="visually-hidden">Телеграм.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__name">HTML Academy</span>
+          <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип «HTML Academy».">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
