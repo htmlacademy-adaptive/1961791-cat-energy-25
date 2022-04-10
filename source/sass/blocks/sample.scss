@@ -1,9 +1,9 @@
 .sample {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 
 .sample__title {
@@ -38,19 +38,8 @@
   text-transform: uppercase;
 }
 
-.sample__price {
-  text-transform: uppercase;
-}
-
 .sample__buttons {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.buttons-list__button {
-  font-family: "Oswald Regular", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
 }
