@@ -1,0 +1,30 @@
+.catalog {
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.description__cell {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog-all__show {
+  text-transform: uppercase;
+}
+
+.catalog-all__crumbs {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog-all__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  background-color:  #F2F2F2;
+  cursor: pointer;
+}

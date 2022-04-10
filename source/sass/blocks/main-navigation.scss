@@ -1,0 +1,19 @@
+.main-navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.site-list__item {
+  font-family: "Oswald Medium", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.site-list__link {
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
+}
