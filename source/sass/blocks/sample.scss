@@ -1,0 +1,45 @@
+.sample {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  background-color: #eaeaea;
+}
+
+.sample__title {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.sample__subtitle {
+  font-family: "Arial", sans-serif;
+  line-height: 18px;
+}
+
+.sample__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sample-item__value {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.sample-item__title {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.sample__price {
+  text-transform: uppercase;
+}
+
+.sample__buttons {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

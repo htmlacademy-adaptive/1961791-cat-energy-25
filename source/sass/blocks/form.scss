@@ -1,0 +1,30 @@
+.form {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.form__description {
+  font-size: 14px;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__legend {
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+  font-weight: 400;
+}

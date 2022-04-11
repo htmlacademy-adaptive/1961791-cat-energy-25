@@ -1,0 +1,23 @@
+.categories__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.categories-item__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.categories-item__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
