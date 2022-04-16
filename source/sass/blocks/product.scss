@@ -1,0 +1,12 @@
+@import '../viewports.scss';
+
+@media (min-width: $tablet-width) {
+  .product__link {
+  padding-left:93px;
+  padding-right: 93px;
+  display: inline;
+  }
+  .product__info {
+    padding-bottom: 33px;
+  }
+}

@@ -1,3 +1,5 @@
+@import '../viewports.scss';
+
 .catalog {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -21,4 +23,20 @@
   color: #000000;
   background-color: #f2f2f2;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    column-gap: 60px;
+    row-gap: 147px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

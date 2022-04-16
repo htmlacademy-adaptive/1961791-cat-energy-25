@@ -1,3 +1,5 @@
+@import '../viewports.scss';
+
 .form {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -27,4 +29,24 @@
   line-height: 26px;
   text-transform: none;
   font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .form__list--tablet {
+    display: grid;
+    grid-template-columns: 221px 221px;
+    row-gap: 32px;
+    column-gap: 123px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper {
+    display: flex;
+  }
+
+  .form__list--desktop {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

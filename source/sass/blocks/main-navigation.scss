@@ -18,7 +18,7 @@
 }
 
 @media (min-width: $desktop-width) {
-.main-navigation {
+.main-navigation--index {
   position: relative;
    &::before {
   content: '';
@@ -30,4 +30,7 @@
   z-index: -1;}
 }
 
+.main-navigation {
+  color: #000000;
+}
 }

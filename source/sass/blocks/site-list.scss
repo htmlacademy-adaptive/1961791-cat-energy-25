@@ -1,3 +1,5 @@
+@import '../viewports.scss';
+
 .site-list__item {
   font-family: "Oswald", sans-serif;
   font-size: 20px;
@@ -27,7 +29,7 @@
     width: 478px;
   }
 
-  .site-list__link {
+  .site-list__link--index {
     line-height: 30px;
     color: #ffffff;
 }
