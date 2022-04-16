@@ -1,7 +1,11 @@
+@import '../viewports.scss';
+
 .categories__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .categories-item__title {
@@ -20,4 +24,11 @@
   text-decoration: none;
   color: #000000;
   cursor: pointer;
+}
+
+@media (min-width: $desktop-width) {
+  .categories__list {
+    display: flex;
+    flex-direction: row
+}
 }

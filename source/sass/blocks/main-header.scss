@@ -1,0 +1,30 @@
+@import '../viewports.scss';
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header__logo {
+  height: 65px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .main-header__logo {
+    height: 75px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__logo {
+    height: 112px;
+  }
+}

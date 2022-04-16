@@ -1,11 +1,31 @@
+@import '../viewports.scss';
+
 .program {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
   color: #ffffff;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background-desktop.jpg");
-  background-repeat: no-repeat;
+}
+
+.program__header {
+  position: relative;
+  background-color: #68b738;
+  z-index: -1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    min-width: 320px;
+    height: 302px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background-image.jpg");
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+}
+
+.program__text {
+  text-transform: uppercase;
 }
 
 .program__title {
@@ -18,4 +38,15 @@
   line-height: 18px;
   color: #ffffff;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .program__header::before {
+    display: none;
+  }
+  .program__header {
+    color: #000000;
+    background: 0 0;
+  }
+
 }
