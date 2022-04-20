@@ -1,16 +1,45 @@
 @import '../viewports.scss';
 
+.advantages {
+  padding:0 20px;
+}
+
 .advantages__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.advantages__item {
+  position: relative;
+  display: block;
+  padding-bottom: 20px;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    z-index: 1;
+    top: 0;
+  }
+}
+
+.advantages__text {
+  margin: 0 auto;
+  text-align: start;
+  padding-bottom: 20px;
+  padding-left: 80px;
 }
 
 .advantages__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  color: #444444;
 }
 
 @media (min-width: $tablet-width) {

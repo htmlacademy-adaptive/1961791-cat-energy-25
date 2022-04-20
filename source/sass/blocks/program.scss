@@ -6,6 +6,8 @@
   line-height: 14px;
   font-weight: 400;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
 .program__header {
@@ -20,24 +22,31 @@
     height: 302px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background-image.jpg");
     background-repeat: no-repeat;
+    background-color: #68b738;
     z-index: -1;
 }
 }
 
 .program__text {
   text-transform: uppercase;
+  padding-left: 62px;
+  padding-right: 62px;
+  margin: 0 auto;
 }
 
 .program__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  margin: 0 auto;
+  padding: 27px 35px 25px 35px;
 }
 
 .program__link {
   line-height: 18px;
   color: #ffffff;
   text-decoration: none;
+  margin: 0 20px 0 20px;
 }
 
 @media (min-width: $tablet-width) {

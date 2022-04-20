@@ -8,32 +8,59 @@
   background-color: #eaeaea;
 }
 
+.sample__wrapper {
+  padding: 25px 20px 20px 20px;
+}
+
 .sample__title {
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
+  padding: 0;
+  padding-bottom: 49px;
+  margin: 0 auto;
 }
 
 .sample__subtitle {
   font-family: "Arial", sans-serif;
   line-height: 18px;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .sample__list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 .sample-item__value {
+  width: 124px;
+  min-height: 56px;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  padding-top: 14px;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
 }
 
 .sample-item__title {
-  font-family: "Arial", sans-serif;
+  display: inline-block;
+  width: 87px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: "Arial","Arial Narrow",sans-serif;
   font-size: 12px;
   line-height: 12px;
+  text-transform: lowercase;
+  text-align: center;
 }
 
 .sample__price {
@@ -44,10 +71,6 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.sample__list {
-  display: flex;
 }
 
 @media (min-width: $tablet-width) {

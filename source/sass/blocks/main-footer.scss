@@ -1,7 +1,24 @@
 @import '../viewports.scss';
 
 .main-footer {
+  padding: 20px;
   background-color: #f2f2f2;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-footer__logo {
+  padding-top: 39px;
+  padding-bottom: 32px;
+  text-align: center;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.main-footer__social {
+  border-bottom: 1px solid #d9d9d9;
 }
 
 @media (min-width: $tablet-width) {
