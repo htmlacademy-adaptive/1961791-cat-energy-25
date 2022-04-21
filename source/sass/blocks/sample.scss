@@ -1,11 +1,15 @@
-@import '../viewports.scss';
-
 .sample {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   background-color: #eaeaea;
+}
+
+.sample__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .sample__title {
@@ -51,14 +55,27 @@
 }
 
 @media (min-width: $tablet-width) {
+  .sample__wrapper {
+    width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
   .sample__stats {
     display: flex;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .sample__wrapper {
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+
   .sample__stats {
     display: flex;
     flex-direction: column;
   }
 }
+

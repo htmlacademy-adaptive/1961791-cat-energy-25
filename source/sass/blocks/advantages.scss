@@ -1,4 +1,8 @@
-@import '../viewports.scss';
+.advantages {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 
 .advantages__title {
   font-family: "Oswald", sans-serif;
@@ -14,16 +18,27 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
   .advantages__list {
     display: grid;
     grid-template-columns: 246px 246px;
     column-gap: 137px;
     row-gap: 37px;
   }
-
   }
 
   @media (min-width: $desktop-width) {
+    .advantages {
+      width: 1220px;
+      padding: 0 110px;
+      margin: 0 auto;
+    }
+
     .advantages__list {
       display: flex;
       width: 240px;

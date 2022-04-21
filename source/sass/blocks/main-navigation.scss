@@ -1,5 +1,3 @@
-@import '../viewports.scss';
-
 .main-navigation__list {
   margin: 0;
   padding: 0;
@@ -20,14 +18,6 @@
 @media (min-width: $desktop-width) {
 .main-navigation {
   position: relative;
-   &::before {
-  content: '';
-  position: absolute;
-  min-width: 1044px;
-  height: 696px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background-image-desktop.jpg");
-  background-repeat: no-repeat;
-  z-index: -1;}
 }
 
 }
