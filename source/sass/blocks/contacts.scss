@@ -1,3 +1,14 @@
+.contacts {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.contacts__header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .contacts__welcome {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -5,3 +16,19 @@
   font-weight: 400;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+
+  @media (min-width: $desktop-width)  {
+    .contacts {
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+    }
+  }
