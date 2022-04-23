@@ -1,12 +1,20 @@
-@import '../viewports.scss';
+.product__link {
+  padding: 10px 109px;
+}
 
 @media (min-width: $tablet-width) {
   .product__link {
-  padding-left:93px;
-  padding-right: 93px;
-  display: inline;
+    padding: 10px 93px;
+    display: inline-block;
   }
+
   .product__info {
     padding-bottom: 33px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product__link {
+    padding: 10px 53px;
   }
 }

@@ -1,10 +1,11 @@
-@import '../viewports.scss';
-
 .catalog {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .catalog-all__show {
@@ -26,6 +27,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    width: 708px;
+    padding: 24px 30px;
+    margin: 0 auto;
+  }
+
   .catalog__list {
     display: grid;
     grid-template-columns: 324px 324px;
@@ -35,6 +42,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+  width: 1220px;
+  padding: 53px 110px;
+  margin: 0 auto;
+  }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;

@@ -1,19 +1,17 @@
-@import '../viewports.scss';
-
-.main-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  flex-wrap: wrap;
-  min-height: 66px;
+.main-header__logo {
+  height: 65px;
+  width: 200px;
 }
 
-.main-header__logo {
-  min-height: 65px;
-  width: 200px;
+.main-header {
+  position: relative;
+}
+
+.main-header__wrapper {
+  width: 280px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .main-header__logo-mobile {
@@ -22,15 +20,13 @@
 
 .main-header__toogle {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 64px;
-  height: 65px;
-  z-index: 2;
-  display: block;
-  background-color: transparent;
   cursor: pointer;
-  border: none;
+  border: 0;
+  width: 20px;
+  height: 20px;
+  top: 22px;
+  right: 22px;
+  background-color: transparent;
 }
 
 .main-header__toogle--closed::before {
@@ -46,8 +42,8 @@
 .main-header__toogle--opened::before {
   content: '';
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 1px;
+  right: 1px;
   width: 20px;
   height: 20px;
   background-image: url("../img/navigation-closed.svg");
@@ -55,6 +51,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-header__wrapper {
+    width: 708px;
+    padding: 24px 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .main-header__toogle--closed::before {
     display: none;
   }
@@ -63,19 +68,29 @@
     display: none;
   }
 
-  .main-header {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
   .main-header__logo {
     height: 75px;
+    display: flex;
+    align-items: center;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-header__logo {
-    height: 112px;
+  .main-header__wrapper {
+    width: 1220px;
+    padding: 53px 110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+
+  .main-header__toogle--closed::before {
+    display: none;
+  }
+
+  .main-header__toogle--opened::before {
+    display: none;
+  }
+
 }

@@ -1,0 +1,22 @@
+.promo {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background-image.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+  background-image: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__index {
+    color: #ffffff;
+    position: relative;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
+    background-repeat: no-repeat;
+    background-position: calc(50% + 660px)top, center;
+  }
+}
+

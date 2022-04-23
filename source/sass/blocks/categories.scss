@@ -1,20 +1,19 @@
-@import '../viewports.scss';
+.categories {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 
 .categories__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  padding: 20px;
 }
 
 .categories__item {
   background-color: #f2f2f2;
-  padding: 22px 22px;
-  margin-bottom: 20px;
-}
-
-.categories__item:last-child {
-  margin-bottom: 0;
+  margin-top: 20px;
+  padding: 24px 20px 22px;
 }
 
 .categories-item__title {
@@ -85,9 +84,39 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+.categories {
+  width: 708px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.categories-item__title {
+  font-size: 36px;
+  line-height: 36px;
+  padding: 0;
+  margin: 0;
+}
+
+.categories-item__subtitle {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.categories-item__link {
+  font-size: 20px;
+  line-height: 30x;
+}
+}
+
 @media (min-width: $desktop-width) {
+  .categories {
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+
   .categories__list {
     display: flex;
-    flex-direction: row
 }
 }

@@ -1,5 +1,3 @@
-@import '../viewports.scss';
-
 .fieldset-button__text {
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -8,8 +6,18 @@
   text-transform: none;
 }
 
+.fieldset-button__button {
+  padding: 7px 44px;
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset-button__button {
+    padding: 13px 45px;
+  }
+}
+
 @media (min-width: $desktop-width) {
-  .fieldset-button {
-    display: flex;
+  .fieldset-button__button {
+    padding: 13px 188px;
   }
 }
