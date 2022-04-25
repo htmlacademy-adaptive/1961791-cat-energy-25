@@ -77,6 +77,9 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-header {
+    position: relative;
+  }
   .main-header__wrapper {
     width: 1220px;
     padding: 53px 110px;
@@ -92,6 +95,14 @@
 
   .main-header__toogle--opened::before {
     display: none;
+  }
+
+  .main-header__promo {
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 720px, #ffffff 720px), url("../img/background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right;
   }
 
 }

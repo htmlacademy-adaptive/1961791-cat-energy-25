@@ -38,6 +38,9 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-list__link-index {
+    color:#ffffff
+  }
   .site-list__link {
     line-height: 20px;
     font-size: 30px;
