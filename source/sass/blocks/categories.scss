@@ -28,11 +28,12 @@
 
 .categories-item__image-slim {
   position: relative;
+
   &::before {
     position: absolute;
     top: 0;
     left: 0;
-    content: '';
+    content: "";
     width: 50px;
     height: 53px;
     background-image: url("../img/cat-slim.svg");
@@ -41,11 +42,12 @@
 
 .categories-item__image-pro {
   position: relative;
+
   &::before {
     position: absolute;
     top: 0;
     left: 0;
-    content: '';
+    content: "";
     width: 67px;
     height: 50px;
     background-image: url("../img/cat-pro.svg");
@@ -76,7 +78,7 @@
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 24px;
     height: 12px;
     left: 113px;
@@ -85,35 +87,36 @@
 }
 
 @media (min-width: $tablet-width) {
-.categories {
-  width: 708px;
-  padding: 0 30px;
-  margin: 0 auto;
+  .categories {
+    width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  .categories-item__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .categories-item__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .categories-item__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
-.categories-item__title {
-  font-size: 36px;
-  line-height: 36px;
-  padding: 0;
-  margin: 0;
-}
-
-.categories-item__subtitle {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.categories-item__link {
-  font-size: 20px;
-  line-height: 30x;
-}
-}
 @media (min-width: $tablet-width) {
-.categories {
-  width: 708px;
-  padding: 0 30px;
-  margin: 0 auto;
-}
+  .categories {
+    width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -125,5 +128,5 @@
 
   .categories__list {
     display: flex;
-}
+  }
 }

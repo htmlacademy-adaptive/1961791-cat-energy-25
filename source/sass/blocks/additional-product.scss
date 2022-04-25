@@ -33,7 +33,7 @@
 }
 
 .additional-product__link {
-padding: 10px 109px;
+  padding: 10px 109px;
 }
 
 @media (min-width: $tablet-width) {
@@ -53,9 +53,9 @@ padding: 10px 109px;
 
 @media (min-width: $desktop-width) {
   .additional-product {
-  width: 1220px;
-  padding: 0 110px;
-  margin: 0 auto;
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
   }
 
   .additional-product__wrapper {
