@@ -3,6 +3,9 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .catalog-all__show {
@@ -21,4 +24,33 @@
   color: #000000;
   background-color: #f2f2f2;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    width: 708px;
+    padding: 24px 30px;
+    margin: 0 auto;
+  }
+
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    column-gap: 60px;
+    row-gap: 147px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 1220px;
+    padding: 53px 110px;
+    margin: 0 auto;
+  }
+
+  .catalog__list {
+    grid-template-columns: 245px 245px 245px 245px;
+    column-gap: 80px;
+    row-gap: 143px;
+  }
 }

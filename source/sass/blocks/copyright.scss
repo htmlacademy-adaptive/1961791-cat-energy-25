@@ -4,4 +4,11 @@
   text-decoration: none;
   color: #000000;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright__name {
+  padding-right: 22px;
 }

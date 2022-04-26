@@ -8,24 +8,31 @@
 
 .sample__wrapper {
   width: 280px;
-  padding: 0 20px;
+  padding: 25px 20px 40px;
   margin: 0 auto;
 }
 
 .sample__title {
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
+  padding: 0;
+  padding-bottom: 49px;
+  margin: 0 auto;
 }
 
 .sample__subtitle {
   font-family: "Arial", sans-serif;
   line-height: 18px;
+  padding-bottom: 20px;
+  margin: 0;
 }
 
 .sample__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
 }
 
 .sample-item__value {
@@ -50,15 +57,30 @@
   list-style-type: none;
 }
 
-.sample__list {
-  display: flex;
-}
-
 @media (min-width: $tablet-width) {
+  .sample {
+    background-color: transparent;
+  }
+
   .sample__wrapper {
     width: 708px;
     padding: 0 30px;
     margin: 0 auto;
+  }
+
+  .sample__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 43px;
+    padding-bottom: 63px;
+    margin: 0 auto;
+  }
+
+  .sample__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 65px;
+    margin: 0;
   }
 
   .sample__stats {
@@ -78,4 +100,3 @@
     flex-direction: column;
   }
 }
-

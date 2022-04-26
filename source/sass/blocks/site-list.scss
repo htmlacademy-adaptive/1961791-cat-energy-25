@@ -4,31 +4,46 @@
   line-height: 20px;
   font-weight: 500;
   text-transform: uppercase;
+  border-top: 1px solid #e6e6e6;
+}
+
+.site-list__item:last-child {
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .site-list__link {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 22px;
   color: #000000;
   text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {
-.site-list {
-  width: 440px;
-}
+  .site-list__item {
+    border: none;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
 
-.site-list__link {
+  .site-list__item:last-child {
+    border: none;
+  }
+
+  .site-list__link {
     line-height: 24px;
     font-size: 18px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .site-list {
-    width: 478px;
+  .site-list__link-index {
+    color: #ffffff;
   }
 
   .site-list__link {
-    line-height: 30px;
-    color: #ffffff;
-}
+    line-height: 20px;
+    font-size: 30px;
+  }
 }

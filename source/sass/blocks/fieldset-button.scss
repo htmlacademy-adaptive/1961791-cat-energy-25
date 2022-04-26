@@ -5,3 +5,19 @@
   font-weight: 400;
   text-transform: none;
 }
+
+.fieldset-button__button {
+  padding: 7px 44px;
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset-button__button {
+    padding: 13px 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset-button__button {
+    padding: 13px 188px;
+  }
+}

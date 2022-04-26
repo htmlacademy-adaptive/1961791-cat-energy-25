@@ -1,0 +1,19 @@
+.promo {
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, #ffffff 302px), url("../img/background-image.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background-image: none;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background-image: none;
+    background-color: transparent;
+  }
+}

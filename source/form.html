@@ -3,35 +3,38 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-mobile" src="img/header_logo-mobile.svg" width="191" height="38"
-        alt="Логотип «Кэт энерджи».">
-    </a>
-
-    <nav class="main-navigation">
-      <button class="main-navigation__toogle" type="button">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-mobile" src="img/header_logo-mobile.svg" width="191" height="38"
+          alt="Логотип «Кэт энерджи».">
+      </a>
+      <button class="main-header__toogle main-header__toogle--opened" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
-      <div class="main-navigation__wrapper">
-        <ul class="main-navigation__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+
+      <nav class="main-navigation main-navigation--opened">
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="main-container">
@@ -40,44 +43,48 @@
     <form class="main-container__form form" action="https://echo.htmlacademy.ru" method="post">
       <p class="form__description">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
-      <ul class="form__list">
-        <li class="form__item">
-          <label class="form__label" for="form-name">Имя:*</label>
-          <input class="form__text" type="text" placeholder="Барсик" id="form-name" name="name" required>
-        </li>
+      <div class="form__wrapper">
+        <ul class="form__list">
+          <li class="form__item">
+            <label class="form__label" for="form-name">Имя:*</label>
+            <input class="form__text" type="text" placeholder="Барсик" id="form-name" name="name" required>
+          </li>
 
-        <li class="form__item">
-          <label class="form__label" for="form-weight">Вес (кг):*</label>
-          <input class="form__text" type="text" placeholder="7" id="form-weight" name="weight" required>
-        </li>
+          <li class="form__item">
+            <label class="form__label" for="form-weight">Вес (кг):*</label>
+            <input class="form__text" type="text" placeholder="7" id="form-weight" name="weight" required>
+          </li>
 
-        <li class="form__item">
-          <label class="form__label" for="form-age">Возраст (лет):</label>
-          <input class="form__text" type="text" placeholder="7" id="form-age" name="age" required>
-        </li>
-      </ul>
+          <li class="form__item">
+            <label class="form__label" for="form-age">Возраст (лет):</label>
+            <input class="form__text" type="text" placeholder="7" id="form-age" name="age" required>
+          </li>
+        </ul>
 
-      <ul class="form__list">
-        <li class="form__item">
-          <input class="form__input-radio" type="radio" id="form-slim" name="slim" checked>
-          <label class="form__label" for="form-slim">Похудение</label>
-        </li>
+        <ul class="form__list">
+          <li class="form__item">
+            <input class="visually-hidden form__input-radio" type="radio" id="form-slim" name="slim" checked>
+            <span class="form__control-mark"></span>
+            <label class="form__label" for="form-slim">Похудение</label>
+          </li>
 
-        <li class="form__item">
-          <input class="form__input-radio" type="radio" id="form-fat" name="fat">
-          <label class="form__label" for="form-slim">Набор массы</label>
-        </li>
+          <li class="form__item">
+            <input class="visually-hidden form__input-radio" type="radio" id="form-fat" name="fat">
+            <span class="form__control-mark"></span>
+            <label class="form__label" for="form-slim">Набор массы</label>
+          </li>
 
-        <li class="form__item">
-          <input class="form__input-radio" type="radio" id="form-not-know" name="not-know">
-          <label class="form__label" for="form-not-know">Не знаю (Нужен ваш совет)</label>
-        </li>
-      </ul>
-
+          <li class="form__item">
+            <input class="visually-hidden form__input-radio" type="radio" id="form-not-know" name="not-know">
+            <span class="form__control-mark"></span>
+            <label class="form__label" for="form-not-know">Не знаю (Нужен ваш совет)</label>
+          </li>
+        </ul>
+      </div>
       <fieldset class="form__fieldset">
         <h2 class="form__legend">Контактные данные
           (владельца кота)</h2>
-        <ul class="form__list">
+        <ul class="form__list form__list--desktop">
           <li class="form__item">
             <label class="form__label" for="form-email">E-mail:*</label>
             <input class="form__text" type="email" id="form-email" name="email" placeholder="kuklachev@gmail.com"
@@ -98,7 +105,7 @@
 
       <fieldset class="form__fieldset">
         <h2 class="form__legend">Дополнительно</h2>
-        <ul class="form__list">
+        <ul class="form__list form__list--tablet form__list--desktop">
           <li class="form__item">
             <input class="form__text" type="checkbox" id="form-sweetener" name="sweetener" checked>
             <label class="form__label" for="form-sweetener">Сахарозаменитель</label>

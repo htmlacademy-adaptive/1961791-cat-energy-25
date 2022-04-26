@@ -3,6 +3,9 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .additional-product__list {
@@ -25,4 +28,37 @@
   line-height: 14px;
   font-size: 14px;
   font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+
+.additional-product__link {
+  padding: 10px 109px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-product {
+    width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  .additional-product__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-product {
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+
+  .additional-product__wrapper {
+    display: flex;
+  }
 }

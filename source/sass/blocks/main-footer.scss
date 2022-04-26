@@ -4,9 +4,30 @@
 }
 
 .main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.main-footer__logo {
+  text-align: center;
+  padding-top: 39px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #d9d9d9;
+  cursor: pointer;
+}
+
+.main-footer__social {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.main-footer__copyright {
+  padding-top: 28px;
+  padding-bottom: 32px;
 }
 
 @media (min-width: $tablet-width) {
@@ -18,7 +39,9 @@
   .main-footer__wrapper {
     width: 708px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -30,5 +53,5 @@
 
   .main-footer__wrapper {
     width: 1220px;
-}
+  }
 }

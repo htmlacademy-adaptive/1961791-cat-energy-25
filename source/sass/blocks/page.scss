@@ -1,15 +1,13 @@
-body {
-  margin: 0 auto;
-  padding: 0;
-}
-
 .page {
-  margin: 0;
-  padding: 0;
   background-color: #ffffff;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: #000000;
+}
+
+.page__body {
+  margin: 0 auto;
+  padding: 0;
 }

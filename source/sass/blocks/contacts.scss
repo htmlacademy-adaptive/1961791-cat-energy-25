@@ -25,10 +25,10 @@
   }
 }
 
-  @media (min-width: $desktop-width)  {
-    .contacts {
+@media (min-width: $desktop-width) {
+  .contacts {
     width: 1220px;
     padding: 0 110px;
     margin: 0 auto;
-    }
   }
+}
