@@ -16,6 +16,7 @@
 
 .main-header__logo-mobile {
   min-height: 38px;
+  padding-bottom: 13px;
 }
 
 .main-header__toogle {
@@ -49,6 +50,12 @@
   background-image: url("../img/navigation-closed.svg");
 }
 
+@media (min-width: $mobile-width-only) {
+  .main-header__wrapper {
+    padding-bottom: 0;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-header__wrapper {
     width: 708px;
@@ -69,8 +76,7 @@
 
   .main-header__logo {
     height: 75px;
-    display: flex;
-    align-items: center;
+    display: block;
   }
 }
 

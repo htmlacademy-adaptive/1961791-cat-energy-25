@@ -17,18 +17,58 @@
   text-transform: uppercase;
 }
 
+.contacts__maps {
+  border: none;
+  display: block;
+  width: 320px;
+  height: 362px;
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
     width: 708px;
     padding: 0 30px;
     margin: 0 auto;
   }
+
+  .contacts__maps {
+    border: none;
+    display: block;
+    width: 768px;
+    height: 400px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
+    position: relative;
     width: 1220px;
     padding: 0 110px;
     margin: 0 auto;
+  }
+
+  .contacts__header {
+    position: absolute;
+    top: 95px;
+    left: 190px;
+    background-color: #ffffff;
+  }
+
+  .contacts__welcome {
+    padding: 59px 80px;
+    width: 163px;
+  }
+
+  .contacts__address {
+    padding: 59px 80px;
+    width: 155px;
+  }
+
+  .contacts__maps {
+    border: none;
+    display: block;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0;
   }
 }

@@ -43,6 +43,10 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  .main-footer__social {
+    border-bottom: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
