@@ -1,32 +1,30 @@
-.main-navigation {
-  position: relative;
-}
+
 
 .main-navigation__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-align: center;
+  display: block;
 }
 
 @media (min-width: $mobile-width-only) {
   .main-navigation {
-    position: absolute;
     background-color: #ffffff;
     width: 100%;
     right: 0;
   }
 
-  .main-navigation--closed {
+  .main-navigation--closed .site-list {
     display: none;
+  }
+
+  .main-navigation--nojs .site-list {
+    display: block;
   }
 
   .main-navigation--opened {
     display: block;
-  }
-
-  .main-navigation--nojs {
-    display: none;
   }
 }
 

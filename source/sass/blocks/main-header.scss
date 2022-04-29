@@ -19,7 +19,20 @@
   padding-bottom: 13px;
 }
 
-.main-header__toogle {
+@media (min-width: $mobile-width-only) {
+  .main-header__wrapper {
+    padding-bottom: 0;
+  }
+
+  .main-header__toogle--opened {
+    display: block;
+  }
+
+  .main-header__toogle--nojs {
+    display: none;
+  }
+
+  .main-header__toogle {
   position: absolute;
   cursor: pointer;
   border: 0;
@@ -49,11 +62,6 @@
   height: 20px;
   background-image: url("../img/navigation-closed.svg");
 }
-
-@media (min-width: $mobile-width-only) {
-  .main-header__wrapper {
-    padding-bottom: 0;
-  }
 }
 
 @media (min-width: $tablet-width) {
