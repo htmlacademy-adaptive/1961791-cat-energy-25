@@ -22,35 +22,60 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
-  padding-left: 72px;
+  padding-left: 70px;
+  padding-top: 6px;
   margin: 0;
 }
 
 .categories-item__image-slim {
   position: relative;
 
-  &::before {
+  &::after {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 3px;
     content: "";
     width: 50px;
-    height: 53px;
+    height: 50px;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+
+  &::before {
+    position: absolute;
+    top: -2px;
+    left: 9px;
+    content: "";
+    width: 36px;
+    height: 50px;
     background-image: url("../img/cat-slim.svg");
+    z-index: 1;
   }
 }
 
 .categories-item__image-pro {
   position: relative;
 
-  &::before {
+  &::after {
     position: absolute;
     top: 0;
     left: 0;
     content: "";
-    width: 67px;
+    width: 50px;
     height: 50px;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+
+  &::before {
+    position: absolute;
+    top: 11px;
+    left: -7px;
+    content: "";
+    width: 67px;
+    height: 28px;
     background-image: url("../img/cat-pro.svg");
+    z-index: 1;
   }
 }
 
@@ -81,7 +106,7 @@
     content: "";
     width: 24px;
     height: 12px;
-    left: 113px;
+    left: 101px;
     background-image: url("../img/arrow.svg");
   }
 }
@@ -93,6 +118,11 @@
     margin: 0 auto;
   }
 
+  .categories__item {
+    margin-top: 20px;
+    padding: 77px 62px 57px 53px;
+  }
+
   .categories-item__title {
     font-size: 36px;
     line-height: 36px;
@@ -100,22 +130,81 @@
     margin: 0;
   }
 
+  .categories-item__image-slim {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: auto;
+      right: 6px;
+      content: "";
+      width: 200px;
+      height: 200px;
+      background-color: #68b738;
+      border-radius: 50%;
+    }
+
+    &::before {
+      position: absolute;
+      top: -5px;
+      left: auto;
+      right: 40px;
+      content: "";
+      width: 140px;
+      height: 194px;
+      background-image: url("../img/cat-slim.svg");
+      background-size: 140px 194px;
+      z-index: 1;
+    }
+  }
+
+  .categories-item__image-pro {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: auto;
+      right: 6px;
+      content: "";
+      width: 200px;
+      height: 200px;
+      background-color: #68b738;
+      border-radius: 50%;
+    }
+
+    &::before {
+      position: absolute;
+      top: 39px;
+      left: auto;
+      right: -23px;
+      content: "";
+      background-image: url("../img/cat-pro.svg");
+      background-size: 268px 112px;
+      width: 268px;
+      height: 112px;
+      z-index: 1;
+    }
+  }
+
   .categories-item__subtitle {
+    margin: 0;
     font-size: 16px;
     line-height: 24px;
+    width: 360px;
+    border-bottom: n;
   }
 
   .categories-item__link {
     font-size: 20px;
     line-height: 30px;
-  }
-}
+    position: relative;
 
-@media (min-width: $tablet-width) {
-  .categories {
-    width: 708px;
-    padding: 0 30px;
-    margin: 0 auto;
+    &::after {
+      left: 129px;
+      top: 28px;
+    }
   }
 }
 
@@ -128,5 +217,77 @@
 
   .categories__list {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .categories-item__subtitle {
+    margin: 0;
+    width: 467px;
+    padding: 0;
+    padding-bottom: 27px;
+  }
+
+  .categories-item__title {
+    padding-left: 214px;
+    padding-bottom: 73px;
+  }
+
+  .categories-item__image-slim {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100px;
+      height: 100px;
+      background-color: #68b738;
+      border-radius: 50%;
+    }
+
+    &::before {
+      position: absolute;
+      top: -5px;
+      left: 12px;
+      content: "";
+      width: 70px;
+      height: 97px;
+      background-image: url("../img/cat-slim.svg");
+      background-size: 70px 97px;
+      z-index: 1;
+    }
+  }
+
+  .categories-item__image-pro {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100px;
+      height: 100px;
+      background-color: #68b738;
+      border-radius: 50%;
+    }
+
+    &::before {
+      position: absolute;
+      top: 21px;
+      left: -13px;
+      content: "";
+      width: 134px;
+      height: 56px;
+      background-image: url("../img/cat-pro.svg");
+      background-size: 134px 56px;
+      z-index: 1;
+    }
+  }
+
+  .categories__item {
+    margin-top: 20px;
+    padding: 77px 51px 59px 52px;
   }
 }
