@@ -45,20 +45,25 @@
     font-size: 18px;
     padding-bottom: 10px;
   }
+
+  .site-list__link:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .site-list__link:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .site-list__link-index {
-    color: #ffffff;
-  }
-
   .site-list__link {
     line-height: 30px;
     font-size: 20px;
     padding-bottom: 18px;
   }
 
-  .site-list__item--active .site-list__link {
+  .site-list__item--active .site-list__link-index {
     border-bottom: 2px solid #ffffff;
+    color: rgba(255, 255, 255, 1);
   }
 }
