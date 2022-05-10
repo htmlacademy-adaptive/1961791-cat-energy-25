@@ -12,3 +12,19 @@
 .copyright__name {
   padding-right: 22px;
 }
+
+.copyright__icon {
+  fill: #444444;
+}
+
+.copyright:hover .copyright__icon {
+  fill: #68b738;
+}
+
+.copyright:active .copyright__icon {
+  fill: rgba(104, 183, 56, 0.3);
+}
+
+.copyright:active .copyright__link {
+  color: rgba(68, 68, 68, 0.3);
+}

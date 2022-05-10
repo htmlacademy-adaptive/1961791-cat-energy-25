@@ -16,7 +16,6 @@
 
 .main-header__logo-mobile {
   min-height: 38px;
-  padding-bottom: 13px;
 }
 
 @media (min-width: $mobile-width-only) {
@@ -85,6 +84,11 @@
   .main-header__logo {
     height: 75px;
     display: block;
+  }
+
+  .main-header__logo-mobile {
+    width: 174px;
+    height: 52px;
   }
 }
 

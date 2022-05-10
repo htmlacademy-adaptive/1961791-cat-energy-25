@@ -45,7 +45,7 @@
 
 .form__text {
   padding: 10px 15px;
-  margin-left: 12px;
+  margin-left: 19px;
   border: 1px solid #e7e7e7;
   font: inherit;
   text-transform: uppercase;
@@ -68,6 +68,10 @@
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;
+}
+
+.form__control-mark:hover {
+  border: #bababa;
 }
 
 .form__input-radio[type="radio"] + .form__control-mark {
@@ -112,7 +116,7 @@
   &::before {
     position: absolute;
     content: "";
-    width: 200%;
+    width: 300px;
     height: 2px;
     top: 14px;
     background-color: #68b738;
@@ -152,7 +156,7 @@
   .form__description {
     font-size: 20px;
     width: 323px;
-    margin-bottom: 37px;
+    margin-bottom: 41px;
   }
 
   .form__border-wrapper {
@@ -167,21 +171,29 @@
     border: none;
   }
 
+  .form__item {
+    padding-bottom: 20px;
+  }
+
   .form__list-checkbox {
     display: grid;
     grid-template-columns: 282px 282px;
     column-gap: 60px;
   }
 
+  .form__header::before {
+    width: 700px;
+  }
+
   .form__header::after {
     position: absolute;
     content: "";
-    width: 200%;
+    width: 100%;
     height: 2px;
     top: 14px;
     background-color: #68b738;
     z-index: -1;
-    right: -65px;
+    right: 85px;
   }
 
   .form__legend {
@@ -249,5 +261,13 @@
 
   .form__item-checkbox:last-child {
     padding-bottom: 0;
+  }
+
+  .form__header::before {
+    width: 1330px;
+  }
+
+  .form__header::after {
+    right: 110px;
   }
 }
