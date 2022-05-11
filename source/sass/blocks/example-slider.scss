@@ -1,0 +1,22 @@
+.example {
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .example-slider {
+    width: 592px;
+    height: 511px;
+  }
+
+  .example-slider__item--before {
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .example-slider__item--after {
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+}

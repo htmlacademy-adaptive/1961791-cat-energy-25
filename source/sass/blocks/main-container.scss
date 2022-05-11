@@ -4,9 +4,10 @@
   line-height: 36px;
   font-weight: 400;
   width: 280px;
-  padding: 0 20px;
+  padding: 27px 20px 41px;
   margin: 0 auto;
   text-align: start;
+  border-top: 1px solid #ebebeb;
 }
 
 .main-container__form {
@@ -20,23 +21,30 @@
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
-    width: 708px;
-    padding: 0 30px;
+    width: 628px;
+    padding: 65px 30px 143px;
     margin: 0 auto;
+    border: none;
+  }
+
+  .main-container__title-form {
+    margin: 0 auto;
+    padding: 18px 0 54px;
   }
 
   .main-container__form {
-    width: 708px;
-    padding: 0 30px;
-    margin: 0 auto;
+    width: 628px;
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-container__title {
     width: 1220px;
-    padding: 0 110px;
-    margin: 0 auto;
+  }
+
+  .main-container__title-form {
+    padding: 87px 0 56px;
   }
 
   .main-container__form {

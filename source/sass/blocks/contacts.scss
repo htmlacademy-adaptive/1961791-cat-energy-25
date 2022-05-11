@@ -21,11 +21,37 @@
   height: 400px;
 }
 
+.contacts--color {
+  background-color: #f2f2f2;
+}
+
 @media (min-width: $tablet-width) {
+  .contacts {
+    background-color: #f2f2f2;
+  }
+
   .contacts__header {
     width: 708px;
-    padding: 0 30px;
+    padding: 60px 30px 55px;
     margin: 0 auto;
+  }
+
+  .contacts__welcome {
+    font-size: 20px;
+    line-height: 26px;
+    width: 177px;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: end;
+  }
+
+  .contacts__address-city {
+    display: block;
+    margin-top: 18px;
   }
 
   .contacts__maps {

@@ -1,0 +1,34 @@
+.example {
+  background-color: #eaeaea;
+}
+
+.example__buttons {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.example__item {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .example__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 67px;
+  }
+}

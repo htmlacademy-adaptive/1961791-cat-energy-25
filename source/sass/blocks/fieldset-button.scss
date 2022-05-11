@@ -4,20 +4,40 @@
   line-height: 16px;
   font-weight: 400;
   text-transform: none;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 21px;
+  padding-bottom: 32px;
 }
 
 .fieldset-button__button {
   padding: 7px 44px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
+  .fieldset-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 72px;
+  }
+
   .fieldset-button__button {
     padding: 13px 45px;
+    width: 282px;
+    margin: 0;
+  }
+
+  .fieldset-button__text {
+    font-size: 16px;
+    margin-left: 61px;
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .fieldset-button__button {
-    padding: 13px 188px;
+    width: 50%;
   }
 }

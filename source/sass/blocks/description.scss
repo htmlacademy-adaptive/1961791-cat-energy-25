@@ -3,3 +3,31 @@
   font-size: 12px;
   line-height: 16px;
 }
+
+.description__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .description__cell {
+    font-size: 16px;
+  }
+
+  .description__row {
+    width: 250px;
+    padding-top: 7px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #cdcdcd;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description__row {
+    width: 169px;
+  }
+}

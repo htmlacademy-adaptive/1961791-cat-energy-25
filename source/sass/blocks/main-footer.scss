@@ -19,6 +19,14 @@
   cursor: pointer;
 }
 
+.main-footer__logo-image-mobile:hover {
+  opacity: 0.8;
+}
+
+.main-footer__logo-image-mobile:active {
+  opacity: 0.6;
+}
+
 .main-footer__social {
   padding-top: 23px;
   padding-bottom: 23px;

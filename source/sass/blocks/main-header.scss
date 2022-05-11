@@ -16,7 +16,6 @@
 
 .main-header__logo-mobile {
   min-height: 38px;
-  padding-bottom: 13px;
 }
 
 @media (min-width: $mobile-width-only) {
@@ -33,35 +32,35 @@
   }
 
   .main-header__toogle {
-  position: absolute;
-  cursor: pointer;
-  border: 0;
-  width: 20px;
-  height: 20px;
-  top: 22px;
-  right: 22px;
-  background-color: transparent;
-}
+    position: absolute;
+    cursor: pointer;
+    border: 0;
+    width: 20px;
+    height: 20px;
+    top: 22px;
+    right: 22px;
+    background-color: transparent;
+  }
 
-.main-header__toogle--closed::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 24px;
-  height: 18px;
-  background-image: url("../img/navigation-button.svg");
-}
+  .main-header__toogle--closed::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 18px;
+    background-image: url("../img/navigation-button.svg");
+  }
 
-.main-header__toogle--opened::before {
-  content: "";
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  width: 20px;
-  height: 20px;
-  background-image: url("../img/navigation-closed.svg");
-}
+  .main-header__toogle--opened::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/navigation-closed.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -85,6 +84,11 @@
   .main-header__logo {
     height: 75px;
     display: block;
+  }
+
+  .main-header__logo-mobile {
+    width: 174px;
+    height: 52px;
   }
 }
 

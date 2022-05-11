@@ -19,10 +19,6 @@
     display: none;
   }
 
-  .main-navigation--nojs .site-list {
-    display: block;
-  }
-
   .main-navigation--opened {
     display: block;
   }
@@ -43,6 +39,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    padding-bottom: 13px;
   }
 }
 
