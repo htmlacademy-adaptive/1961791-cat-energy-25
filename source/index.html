@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon32.svg">
+  <link rel="icon" type="image/svg" sizes="32x32" href="./img/favicon32.svg">
   <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -50,8 +50,12 @@
             <h2 class="program__title">Функциональное
               питание для котов</h2>
             <p class="program__text">Занялся собой? Займись котом!</p>
-            <img class="program__logo-mobile" src="./img/index-can-mobile.png" width="280" height="270"
-              alt="Корм «Кэт энерджи».">
+            <picture>
+              <source media="(min-width: 1220px)" srcset="./img/index-can@3x.png">
+              <source media="(min-width: 768px)" srcset="./img/index-can@2x.png">
+              <img class="program__logo-mobile" src="./img/index-can@1x.png" width="280" height="270"
+                alt="Корм «Кэт энерджи».">
+            </picture>
             <a class="program__link button" href="form.html">Подобрать программу</a>
           </div>
         </div>
@@ -132,18 +136,13 @@
 
     <section class="example">
       <div class="example__wrapper">
-        <div class="example__item example-slider example-slider--before">
+        <div class="example__item example-slider">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/cat-fat.png">
-            <img class="example-slider" src="img/cat-fat-mobile.png" width="280" height="232" alt="Толстая кошка.">
+            <source media="(min-width: 768px)" srcset="img/cat-fat@2x.png">
+            <source media="(min-width: 768px)" srcset="img/cat-skinny@2x.png">
+            <img class="example-slider" src="img/cat-fat@1x.png" width="280" height="232" alt="Толстая кошка.">
           </picture>
         </div>
-        <!-- <div class="example__item example-slider example-slider__item--after">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/cat-skinny.png">
-            <img class="example-slider" src="img/cat-fat-mobile.png" width="280" height="232" alt="Толстая кошка.">
-          </picture>
-        </div> -->
       </div>
 
       <ul class="example__buttons buttons-list">

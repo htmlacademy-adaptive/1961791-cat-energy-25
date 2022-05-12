@@ -8,7 +8,7 @@
 
 .sample__wrapper {
   width: 280px;
-  padding: 25px 20px 40px;
+  padding: 25px 20px;
   margin: 0 auto;
 }
 
@@ -17,7 +17,7 @@
   line-height: 40px;
   font-weight: 400;
   padding: 0;
-  padding-bottom: 49px;
+  padding-bottom: 42px;
   margin: 0 auto;
 }
 
@@ -56,7 +56,7 @@
   width: 81px;
   margin: 0 auto;
   text-align: center;
-  margin-top: -10px;
+  padding-top: 10px;
   background-color: #eaeaea;
 }
 
@@ -133,6 +133,8 @@
 @media (min-width: $desktop-width) {
   .sample {
     border: none;
+    display: flex;
+    background-color: #eaeaea;
   }
 
   .sample__wrapper {
