@@ -10,3 +10,10 @@
     background-color: transparent;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo {
+    margin: 0 auto;
+    width: 1220px;
+  }
+}

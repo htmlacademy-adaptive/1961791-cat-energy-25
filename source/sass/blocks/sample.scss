@@ -56,7 +56,7 @@
   width: 81px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 10px;
+  padding-top: -10px;
   background-color: #eaeaea;
 }
 
@@ -146,6 +146,10 @@
 
   .sample__example {
     width: 436px;
+  }
+
+  .sample-item__title {
+    background-color: #eaeaea;
   }
 
   .sample__price {

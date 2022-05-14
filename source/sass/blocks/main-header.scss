@@ -87,8 +87,7 @@
   }
 
   .main-header__logo-mobile {
-    width: 174px;
-    height: 52px;
+    min-height: 52px;
   }
 }
 
@@ -104,6 +103,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .main-header__logo-mobile {
+    min-height: 59px;
   }
 
   .main-header__toogle--closed::before {
