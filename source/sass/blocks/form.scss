@@ -64,10 +64,11 @@
 .form__icon {
   position: relative;
   right: 28px;
-  stroke: #222222;
+  fill: none;
 }
 
 .form__text:focus + .form__icon {
+  outline: none;
   stroke: #68b738;
 }
 
