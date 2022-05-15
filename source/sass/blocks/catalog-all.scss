@@ -17,8 +17,17 @@
 
 .catalog-all__link {
   background-color: #f2f2f2;
+  color: #444444;
   padding: 10px 92px;
   margin-top: 21px;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

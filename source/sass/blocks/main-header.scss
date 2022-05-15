@@ -20,7 +20,7 @@
 
 @media (min-width: $mobile-width-only) {
   .main-header__wrapper {
-    padding-bottom: 0;
+    padding-bottom: 13px;
   }
 
   .main-header__toogle--opened {
@@ -87,8 +87,7 @@
   }
 
   .main-header__logo-mobile {
-    width: 174px;
-    height: 52px;
+    min-height: 52px;
   }
 }
 
@@ -106,6 +105,10 @@
     align-items: center;
   }
 
+  .main-header__logo-mobile {
+    min-height: 59px;
+  }
+
   .main-header__toogle--closed::before {
     display: none;
   }
@@ -116,7 +119,8 @@
 
   .main-header__promo {
     position: relative;
-    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 720px, #ffffff 720px), url("../img/background-image.jpg");
+    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 720px, #ffffff 720px), url("../img/background-image-desktop.jpg");
+    height: 694px;
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: right;

@@ -51,11 +51,32 @@
   text-transform: uppercase;
   color: #444444;
   flex-grow: 1;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 1px solid #444444;
+  }
 }
 
 .form__icon {
   position: relative;
   right: 28px;
+  stroke: #222222;
+}
+
+.form__text:focus + .form__icon {
+  stroke: #68b738;
+}
+
+.form__text:invalid {
+  border: 1px solid #ff8282;
+}
+
+.form__text:invalid + .form__icon {
+  stroke: #ff8282;
 }
 
 .form__label-radio {
@@ -71,7 +92,7 @@
 }
 
 .form__control-mark:hover {
-  border: #bababa;
+  border: 1px solid #bababa;
 }
 
 .form__input-radio[type="radio"] + .form__control-mark {
@@ -103,6 +124,15 @@
   height: 14px;
   background-image: url("../img/checked.svg");
 }
+
+.form__text-checkbox[type="checkbox"]:disabled + .form__control-mark {
+  border: 1px solid rgba(186, 186, 186, 0.3);
+}
+
+//не работает
+// .form__text-checkbox[type="checkbox"]:disabled + .form__label-checkbox {
+//   color: rgba(0, 0, 0, 0.3);
+// }
 
 .form__fieldset {
   margin: 0;
