@@ -40,7 +40,6 @@
 
 @media (min-width: $tablet-width) {
   .main-footer {
-    padding: 0 30px;
     margin: 0 auto;
   }
 
@@ -49,7 +48,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    padding-top: 43px;
+  }
+
+  .main-footer__logo {
+    padding-top: 18px;
+  }
+
+  .main-footer__copyright {
+    padding-top: 10px;
   }
 
   .main-footer__social {

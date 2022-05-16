@@ -31,12 +31,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .product {
+    padding: 38px;
+  }
+
   .product__title {
     font-size: 20px;
     line-height: 24px;
     text-align: center;
     width: 154px;
-    margin-bottom: 21px;
+    margin: 0 auto;
   }
 
   .product__info {
@@ -48,7 +52,7 @@
 
   .product__link {
     padding: 10px 93px;
-    margin: 33px 37px 39px 39px;
+    margin-top: 33px;
   }
 
   .product__catalog-image {
