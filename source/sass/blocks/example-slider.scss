@@ -30,11 +30,11 @@
   }
 
   .example-slider--before {
-    clip: rect(auto,345px,auto,auto);
+    clip: rect(auto, 345px, auto, auto);
   }
 
   .example-slider--after {
-    clip: rect(auto,auto,auto,243px);
+    clip: rect(auto, auto, auto, 243px);
     display: block;
     width: 545px;
   }
