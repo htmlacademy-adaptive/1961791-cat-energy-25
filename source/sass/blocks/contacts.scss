@@ -81,9 +81,14 @@
     padding: 0;
     margin: 0;
     width: 565px;
-    top: 95px;
-    left: 190px;
+    top: 90px;
+    left: 130px;
     background-color: #ffffff;
+  }
+
+  .contacts__wrapper{
+    position: relative;
+    width: 1440px;
   }
 
   .contacts__welcome {

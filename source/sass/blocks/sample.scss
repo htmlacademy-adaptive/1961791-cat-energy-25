@@ -145,12 +145,21 @@
     display: flex;
   }
 
+  .sample__title {
+    padding-top: 26px;
+  }
+
   .sample__example {
     width: 436px;
   }
 
   .sample-item__title {
     background-color: #eaeaea;
+  }
+
+  .sample__subtitle {
+    padding-top: 83px;
+    padding-bottom: 67px;
   }
 
   .sample__price {

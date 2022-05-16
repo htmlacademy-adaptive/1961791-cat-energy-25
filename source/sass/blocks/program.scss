@@ -101,9 +101,13 @@
 
   .program__header {
     width: 1220px;
-    padding: 0 110px;
     margin: 0 auto;
     background-image: none;
+  }
+
+  .program__content {
+    padding-left: 61px;
+    padding-top: 43px;
   }
 
   .program__text {
@@ -116,7 +120,8 @@
     width: auto;
     height: auto;
     z-index: 1;
-    top: -34px;
+    top: -26px;
+    left: 738px;
   }
 
   .program__title {
