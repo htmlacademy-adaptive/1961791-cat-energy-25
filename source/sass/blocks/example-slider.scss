@@ -7,12 +7,35 @@
 }
 
 @media (min-width: $tablet-width) {
+  .example__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-bottom: 15px;
+  }
+
   .example-slider {
+    position: relative;
+    height: 560px;
+  }
+
+  .example-slider__image {
     width: auto;
     height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .example-slider--before {
+    clip: rect(auto,345px,auto,auto);
   }
 
   .example-slider--after {
+    clip: rect(auto,auto,auto,243px);
     display: block;
+    width: 545px;
   }
 }
