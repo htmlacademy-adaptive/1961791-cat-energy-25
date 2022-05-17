@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.example-slider--after {
+.example-slider__after {
   display: none;
 }
 
@@ -29,11 +29,11 @@
     margin: 0 auto;
   }
 
-  .example-slider--before {
+  .example-slider__before {
     clip: rect(auto, 345px, auto, auto);
   }
 
-  .example-slider--after {
+  .example-slider__after {
     clip: rect(auto, auto, auto, 243px);
     display: block;
     width: 545px;

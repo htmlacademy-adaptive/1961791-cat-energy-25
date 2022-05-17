@@ -141,10 +141,12 @@
     line-height: 36px;
     padding: 0;
     margin: 0;
+    padding-right: 315px;
   }
 
   .categories-item__image-slim {
     position: relative;
+    padding-right: 315px;
 
     &::after {
       position: absolute;
@@ -214,6 +216,8 @@
     line-height: 30px;
     position: relative;
     padding-top: 28px;
+    width: 110px;
+    margin: 0;
 
     &::after {
       left: 132px;
@@ -240,11 +244,13 @@
     width: 467px;
     padding: 0;
     padding-bottom: 27px;
+    border-bottom: none;
   }
 
   .categories-item__title {
     padding-left: 163px;
     padding-bottom: 73px;
+    padding-right: 0;
   }
 
   .categories-item__image-slim {

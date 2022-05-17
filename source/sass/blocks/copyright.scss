@@ -5,6 +5,7 @@
   color: #000000;
   cursor: pointer;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -27,4 +28,11 @@
 
 .copyright:active .copyright__link {
   color: rgba(68, 68, 68, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    width: 163px;
+    justify-content: flex-end;
+  }
 }
