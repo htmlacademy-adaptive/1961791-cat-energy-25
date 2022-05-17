@@ -32,3 +32,9 @@
     padding-bottom: 15px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .example {
+    background-color: transparent;
+  }
+}
