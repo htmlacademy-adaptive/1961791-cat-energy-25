@@ -111,6 +111,15 @@
   }
 }
 
+.categories-item__link:hover::after {
+  width: 32px;
+  background-image: url("../img/arrow-hover.svg");
+}
+
+.categories-item__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .categories {
     width: 708px;
@@ -132,10 +141,12 @@
     line-height: 36px;
     padding: 0;
     margin: 0;
+    padding-right: 315px;
   }
 
   .categories-item__image-slim {
     position: relative;
+    padding-right: 315px;
 
     &::after {
       position: absolute;
@@ -205,6 +216,8 @@
     line-height: 30px;
     position: relative;
     padding-top: 28px;
+    width: 110px;
+    margin: 0;
 
     &::after {
       left: 132px;
@@ -231,11 +244,13 @@
     width: 467px;
     padding: 0;
     padding-bottom: 27px;
+    border-bottom: none;
   }
 
   .categories-item__title {
-    padding-left: 214px;
+    padding-left: 163px;
     padding-bottom: 73px;
+    padding-right: 0;
   }
 
   .categories-item__image-slim {
@@ -243,7 +258,7 @@
 
     &::after {
       position: absolute;
-      top: 0;
+      top: -30px;
       left: 0;
       content: "";
       width: 100px;
@@ -254,8 +269,8 @@
 
     &::before {
       position: absolute;
-      top: -5px;
-      left: 12px;
+      top: -35px;
+      left: 16px;
       content: "";
       width: 70px;
       height: 97px;
@@ -270,7 +285,7 @@
 
     &::after {
       position: absolute;
-      top: 0;
+      top: -30px;
       left: 0;
       content: "";
       width: 100px;
@@ -281,8 +296,8 @@
 
     &::before {
       position: absolute;
-      top: 21px;
-      left: -13px;
+      top: -10px;
+      left: -17px;
       content: "";
       width: 134px;
       height: 56px;
@@ -295,5 +310,13 @@
   .categories__item {
     margin-top: 0;
     padding: 77px 51px 59px 52px;
+  }
+
+  .categories-item__link {
+    padding: 0;
+
+    &::after {
+      top: 9px;
+    }
   }
 }

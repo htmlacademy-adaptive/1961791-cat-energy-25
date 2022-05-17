@@ -7,7 +7,7 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/svg" sizes="32x32" href="./img/favicon32.svg">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 
 </head>
 
@@ -34,10 +34,10 @@
                 <a class="site-list__link site-list__link-index" href="index.html">Главная</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link " href="catalog.html">Каталог продукции</a>
+                <a class="site-list__link site-list__link-index" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link " href="form.html">Подбор программы</a>
+                <a class="site-list__link site-list__link-index" href="form.html">Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -51,13 +51,17 @@
               питание для котов</h2>
             <p class="program__text">Занялся собой? Займись котом!</p>
             <picture>
-              <source type="image/webp" media="(min-width: 1220px)" srcset="./img/index-can-desktop@1x.webp 1x,./img/index-can-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="./img/index-can-tablet@1x.webp 1x, ./img/index-can-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="./img/index-can-mobile@1x.webp 1x, ./img/index-can-mobile@2x.webp 2x,">
-              <source media="(min-width: 1220px)" srcset="./img/index-can-desktop@1x.png 1x,./img/index-can-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="./img/index-can-tablet@1x.png 1x, ./img/index-can-tablet@2x.png 2x">
+              <source type="image/webp" media="(min-width: 1220px)"
+                srcset="./img/index-can-desktop@1x.webp 1x,./img/index-can-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/index-can-tablet@1x.webp 1x, ./img/index-can-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/index-can-mobile@1x.webp 1x, ./img/index-can-mobile@2x.webp 2x">
+              <source media="(min-width: 1220px)"
+                srcset="./img/index-can-desktop@1x.png 1x,./img/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/index-can-tablet@1x.png 1x, ./img/index-can-tablet@2x.png 2x">
               <img class="program__logo-mobile" src="./img/index-can-mobile@1x.png" width="280" height="270"
-                alt="Корм «Кэт энерджи»." srcset="./img/index-can-mobile@2x.png">>
+                alt="Корм «Кэт энерджи»." srcset="./img/index-can-mobile@2x.png">
             </picture>
             <a class="program__link button" href="form.html">Подобрать программу</a>
           </div>
@@ -110,69 +114,76 @@
       </ul>
     </section>
 
-    <section class="sample">
-      <div class="sample__wrapper">
-        <div class="sample__example">
-          <h2 class="sample__title">Живой пример</h2>
-          <p class="sample__subtitle">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-            Slim.
-            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-            часов в день. </p>
-          <div class="sample__stats">
-            <ul class="sample__list">
-              <li class="sample__item sample-item">
-                <p class="sample-item__value">5 кг</p>
-                <p class="sample-item__title">снижение веса</p>
-              </li>
-              <li class="sample__item sample-item">
-                <p class="sample-item__value">60 дней</p>
-                <p class="sample-item__title">затрачено времени</p>
-              </li>
-            </ul>
-            <p class="sample__price">Затраты на питание:
-              <span class="sample__cost"> 15 000 РУБ.</span>
-            </p>
+    <div class="sample-row">
+      <section class="sample">
+        <div class="sample__wrapper">
+          <div class="sample__example">
+            <h2 class="sample__title">Живой пример</h2>
+            <p class="sample__subtitle">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+              Slim.
+              Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+              часов в день. </p>
+            <div class="sample__stats">
+              <ul class="sample__list">
+                <li class="sample__item sample-item">
+                  <p class="sample-item__value">5 кг</p>
+                  <p class="sample-item__title">снижение веса</p>
+                </li>
+                <li class="sample__item sample-item">
+                  <p class="sample-item__value">60 дней</p>
+                  <p class="sample-item__title">затрачено времени</p>
+                </li>
+              </ul>
+              <p class="sample__price">Затраты на питание:
+                <span class="sample__cost"> 15 000 РУБ.</span>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="example">
-      <div class="example__wrapper">
-        <div class="example__item example-slider">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/cat-fat-tablet@1x.png 1x, img/cat-fat-tablet@2x.png 2x">
-            <img class="example-slider example-slider--before" src="img/cat-fat-mobile@1x.png" width="280" height="232" alt="Толстая кошка.">
-          </picture>
+      <section class="example">
+        <div class="example__wrapper">
+          <div class="example__item example-slider">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-fat-tablet@1x.png 1x, img/cat-fat-tablet@2x.png 2x">
+              <img class="example-slider__image example-slider__before" src="img/cat-fat-mobile@1x.png" width="280"
+                height="232" alt="Толстая кошка.">
+            </picture>
 
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/cat-skinny-tablet@1x.png 1x, img/cat-skinny-tablet@2x.png 2x">
-            <img class="example-slider example-slider--after" src="img/cat-skinny-tablet@1x.png 1x" width="280" height="232" alt="Худая кошка.">
-          </picture>
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/cat-skinny-tablet@1x.png 1x, img/cat-skinny-tablet@2x.png 2x">
+              <img class="example-slider__image example-slider__after" src="img/cat-skinny-tablet@1x.png" width="280"
+                height="232" alt="Худая кошка.">
+            </picture>
+          </div>
         </div>
-      </div>
 
-      <ul class="example__buttons buttons-list">
-        <li class="buttons-list__item">
-          <button class="buttons-list__button" type="button">Было</button>
-        </li>
-        <li class="buttons-list__item">
-          <button class="buttons-list__bar" type="button">
-            <span class="visually-hidden">Изменить.</span>
-          </button>
-        </li>
-        <li class="buttons-list__item">
-          <button class="buttons-list__button" type="button">Стало</button>
-        </li>
-      </ul>
-    </section>
+        <ul class="example__buttons buttons-list">
+          <li class="buttons-list__item">
+            <button class="buttons-list__button" type="button">Было</button>
+          </li>
+          <li class="buttons-list__item">
+            <button class="buttons-list__bar" type="button">
+              <span class="visually-hidden">Изменить.</span>
+            </button>
+          </li>
+          <li class="buttons-list__item">
+            <button class="buttons-list__button" type="button">Стало</button>
+          </li>
+        </ul>
+      </section>
+    </div>
 
     <section class="contacts">
-      <div class="contacts__header">
-        <p class="contacts__welcome">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург</p>
+      <div class="contacts__wrapper">
+        <div class="contacts__header">
+          <p class="contacts__welcome">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая
+            Конюшенная, д. 19/8
+            Санкт-Петербург</p>
+        </div>
       </div>
       <div class="contacts__maps">
         <h2 class="visually-hidden">Как до нас добраться</h2>
@@ -196,7 +207,7 @@
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#">
               <svg class="social__link-logo" width="27" height="17">
-                <use href="img/sprite.svg#icon-vkontakte"></use>
+                <use href="img/sprite.svg#vkontakte"></use>
               </svg>
               <span class="visually-hidden">Вконтакте.</span>
             </a>
@@ -204,7 +215,7 @@
           <li class="social__item">
             <a class="social__link social__link--youtube" href="#">
               <svg class="social__link-logo" width="28" height="22">
-                <use href="img/sprite.svg#icon-youtube"></use>
+                <use href="img/sprite.svg#youtube"></use>
               </svg>
               <span class="visually-hidden">Ютуб.</span>
             </a>
@@ -212,7 +223,7 @@
           <li class="social__item">
             <a class="social__link social__link--telegram" href="#">
               <svg class="social__link-logo" width="20" height="18">
-                <use href="img/sprite.svg#icon-telegram"></use>
+                <use href="img/sprite.svg#telegram"></use>
               </svg>
               <span class="visually-hidden">Телеграм.</span>
             </a>
@@ -224,7 +235,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__name">HTML Academy</span>
           <svg class="copyright__icon" width="27" height="34">
-            <use href="img/sprite.svg#icon-copyright"></use>
+            <use href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>

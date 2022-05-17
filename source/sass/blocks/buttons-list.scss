@@ -5,6 +5,15 @@
   text-transform: uppercase;
   border: none;
   padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: solid rgba(0, 0, 0, 0.4);
+  }
+
+  &:active {
+    border-bottom: none;
+  }
 }
 
 .buttons-list__bar {
@@ -17,6 +26,7 @@
   margin-left: 21px;
   margin-right: 16px;
   position: relative;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -27,7 +37,17 @@
     left: 6px;
     background-color: #68b738;
     border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
   }
+}
+
+.buttons-list__bar:hover::before {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.19);
+}
+
+.buttons-list__bar:active::before {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid #68b738;
 }
 
 @media (min-width: $tablet-width) {

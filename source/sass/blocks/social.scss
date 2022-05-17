@@ -13,14 +13,10 @@
   padding-right: 4px;
 }
 
-.social__link-logo {
-  fill: #666666;
+.social__link-logo:hover {
+  fill: #68b738;
+}
 
-  &:hover {
-    fill: #68b738;
-  }
-
-  &:active {
-    fill: rgba(104, 183, 56, 0.3);
-  }
+.social__link-logo:active {
+  fill: rgba(104, 183, 56, 0.3);
 }
