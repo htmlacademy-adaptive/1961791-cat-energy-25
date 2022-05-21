@@ -7,6 +7,8 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/svg" sizes="32x32" href="./img/favicon32.svg">
+  <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -46,8 +48,7 @@
     <h1 class="main-container__title main-container__title-form">Подбор программы</h1>
 
     <form class="main-container__form form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="form__description">Заполните анкету, и мы подберем
-        программу питания для вашего кота</p>
+      <p class="form__description">Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота</p>
       <div class="form__wrapper">
         <ul class="form__list">
           <li class="form__item">
@@ -56,38 +57,39 @@
           </li>
 
           <li class="form__item">
-            <label class="form__label" for="form-weight">Вес (кг):*</label>
+            <label class="form__label" for="form-weight">Вес&nbsp;(кг):*</label>
             <input class="form__text" type="text" placeholder="7" id="form-weight" name="weight" required>
           </li>
 
           <li class="form__item">
-            <label class="form__label" for="form-age">Возраст (лет):</label>
+            <label class="form__label" for="form-age">Возраст&nbsp;(лет):</label>
             <input class="form__text" type="text" placeholder="7" id="form-age" name="age" required>
           </li>
         </ul>
 
-        <div class="form__border-wrapper">
-          <ul class="form__list">
-            <li class="form__item">
-              <input class="visually-hidden form__input-radio" type="radio" id="form-slim" name="slim" checked>
-              <span class="form__control-mark"></span>
-              <label class="form__label-radio" for="form-slim">Похудение</label>
+        <div class="question">
+          <ul class="question__list">
+            <li class="question__item">
+              <input class="visually-hidden question__input-radio" type="radio" id="question-slim" name="slim" checked>
+              <span class="question__control-mark"></span>
+              <label class="question__label-radio" for="question-slim">Похудение</label>
             </li>
 
-            <li class="form__item">
-              <input class="visually-hidden form__input-radio" type="radio" id="form-fat" name="fat">
-              <span class="form__control-mark"></span>
-              <label class="form__label-radio" for="form-fat">Набор массы</label>
+            <li class="question__item">
+              <input class="visually-hidden question__input-radio" type="radio" id="question-fat" name="fat">
+              <span class="question__control-mark"></span>
+              <label class="question__label-radio" for="question-fat">Набор массы</label>
             </li>
 
-            <li class="form__item">
-              <input class="visually-hidden form__input-radio" type="radio" id="form-not-know" name="not-know">
-              <span class="form__control-mark"></span>
-              <label class="form__label-radio" for="form-not-know">Не знаю (Нужен ваш совет)</label>
+            <li class="question__item">
+              <input class="visually-hidden question__input-radio" type="radio" id="question-not-know" name="not-know">
+              <span class="question__control-mark"></span>
+              <label class="question__label-radio" for="question-not-know">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
         </div>
       </div>
+
       <fieldset class="form__fieldset">
         <div class="form__header">
           <h2 class="form__legend">Контактные данные
@@ -95,10 +97,10 @@
         </div>
         <ul class="form__list form__list-desktop">
           <li class="form__item form__item-desktop">
-            <label class="form__label" for="form-email">E-mail:*</label>
+            <label class="form__label" for="form-email">E&#8209;mail:*</label>
             <input class="form__text" type="email" id="form-email" name="email" placeholder="kuklachev@gmail.com"
               required>
-            <svg class="form__icon" width="19" height="14">
+            <svg class="form__icon form__icon-phone" width="19" height="14">
               <use href="img/sprite.svg#email"></use>
             </svg>
           </li>
@@ -106,7 +108,7 @@
           <li class="form__item">
             <label class="form__label" for="form-phone">Телефон:*</label>
             <input class="form__text" type="tel" id="form-phone" name="phone" placeholder="8 (960) 900-60-90" required>
-            <svg class="form__icon" width="20" height="20">
+            <svg class="form__icon form__icon-phone" width="20" height="20">
               <use href="img/sprite.svg#phone"></use>
             </svg>
           </li>
@@ -120,7 +122,7 @@
         <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота" name="comments"></textarea>
       </div>
 
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__extra">
         <div class="form__header">
           <h2 class="form__legend">Дополнительно</h2>
         </div>
@@ -160,10 +162,10 @@
 
     <section class="contacts contacts--color">
       <div class="contacts__header">
-        <p class="contacts__welcome">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__welcome">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
         <p class="contacts__address">ул. Большая
           Конюшенная, д. 19/8
-          Санкт-Петербург</p>
+          <span class="contacts__city">Санкт-Петербург</span></p>
       </div>
       <div class="contacts__maps">
         <h2 class="visually-hidden">Как до нас доюраться</h2>

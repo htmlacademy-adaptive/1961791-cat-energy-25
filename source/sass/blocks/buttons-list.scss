@@ -1,5 +1,5 @@
 .buttons-list__button {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -55,6 +55,7 @@
     font-size: 20px;
     line-height: 30px;
     border-bottom: dashed #dcdcdc;
+    background-color: #eaeaea;
   }
 
   .buttons-list__bar {
@@ -72,7 +73,7 @@
       width: 34px;
       height: 34px;
       top: -15px;
-      left: 198px;
+      left: 194px;
       background-color: #ffffff;
       border: 1px solid #cdcdcd;
       border-radius: 50%;
@@ -84,8 +85,16 @@
       width: 8px;
       height: 8px;
       top: 0;
+      left: 208px;
       background-color: #68b738;
       border-radius: 50%;
     }
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .buttons-list__button {
+    background-color: #f2f2f2;
   }
 }

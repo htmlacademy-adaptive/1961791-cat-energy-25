@@ -1,41 +1,31 @@
-.example {
-  position: relative;
-}
-
 .example-slider__after {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .example__wrapper {
-    width: 768px;
-    margin: 0 auto;
-    padding-left: 30px;
-    padding-bottom: 15px;
-  }
-
   .example-slider {
     position: relative;
     height: 560px;
   }
 
   .example-slider__image {
-    width: auto;
+    width: 655px;
     height: auto;
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     left: 0;
     right: 0;
     margin: 0 auto;
   }
 
   .example-slider__before {
-    clip: rect(auto, 345px, auto, auto);
+    clip: rect(auto, 299px, auto, auto);
   }
 
   .example-slider__after {
-    clip: rect(auto, auto, auto, 243px);
+    clip: rect(auto, auto, auto, 237px);
     display: block;
-    width: 545px;
+    width: 535px;
+    bottom: 20px;
   }
 }

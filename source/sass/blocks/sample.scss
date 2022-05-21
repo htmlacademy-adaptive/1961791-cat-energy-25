@@ -1,5 +1,5 @@
 .sample {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -33,7 +33,6 @@
   padding: 0;
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
 }
 
 .sample-item__value {
@@ -56,7 +55,7 @@
   width: 81px;
   margin: 0 auto;
   text-align: center;
-  padding-top: -10px;
+  margin-top: -13px;
   background-color: #eaeaea;
 }
 
@@ -102,7 +101,7 @@
   }
 
   .sample__item {
-    padding-right: 42px;
+    padding-right: 39px;
   }
 
   .sample-item__value {
@@ -128,6 +127,13 @@
   .sample__price {
     width: 174px;
     text-align: end;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .sample__cost {
+    display: block;
+    padding-top: 9px;
   }
 }
 
@@ -140,7 +146,8 @@
   .sample__wrapper {
     margin: 0 auto;
     display: flex;
-    width: 430px;
+    width: 440px;
+    padding: 0;
   }
 
   .sample__title {
@@ -153,6 +160,7 @@
 
   .sample-item__title {
     background-color: #eaeaea;
+    margin-top: -10px;
   }
 
   .sample__subtitle {
@@ -164,10 +172,12 @@
     width: auto;
     text-align: start;
     padding-top: 47px;
+    display: flex;
   }
 
   .sample__cost {
-    padding-left: 63px;
+    padding-left: 66px;
+    padding-top: 0;
   }
 
   .sample__stats {

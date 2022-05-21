@@ -1,5 +1,5 @@
 .site-list__item {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
@@ -25,6 +25,7 @@
 
   .site-list__item--active .site-list__link {
     border-bottom: 2px solid #68b738;
+    padding-bottom: 9px;
   }
 
   .site-list__item:first-child {
@@ -56,6 +57,10 @@
   .site-list__link {
     line-height: 30px;
     font-size: 20px;
+  }
+
+  .site-list__link-index {
+    color: #ffffff;
   }
 
   .site-list__link-index:hover {
