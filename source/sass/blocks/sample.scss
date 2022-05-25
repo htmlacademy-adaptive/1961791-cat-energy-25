@@ -1,5 +1,5 @@
 .sample {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -34,30 +34,6 @@
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-}
-
-.sample-item__value {
-  font-size: 24px;
-  line-height: 24px;
-  text-transform: uppercase;
-  margin: 0 auto;
-  border: 1px solid #cdcdcd;
-  border-radius: 3px;
-  width: 124px;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 18px;
-}
-
-.sample-item__title {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 12px;
-  width: 81px;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: -10px;
-  background-color: #eaeaea;
 }
 
 .sample__price {
@@ -102,32 +78,19 @@
   }
 
   .sample__item {
-    padding-right: 42px;
-  }
-
-  .sample-item__value {
-    width: 162px;
-    font-size: 30px;
-    line-height: 37px;
-    text-transform: uppercase;
-    margin: 0 auto;
-    border: 1px solid #cdcdcd;
-    border-radius: 3px;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 20px;
-  }
-
-  .sample-item__title {
-    font-size: 14px;
-    line-height: 14px;
-    background-color: #ffffff;
-    width: 142px;
+    padding-right: 39px;
   }
 
   .sample__price {
     width: 174px;
     text-align: end;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .sample__cost {
+    display: block;
+    padding-top: 9px;
   }
 }
 
@@ -140,7 +103,12 @@
   .sample__wrapper {
     margin: 0 auto;
     display: flex;
-    width: 430px;
+    width: 440px;
+    padding: 0;
+  }
+
+  .sample__list {
+    justify-content: flex-start;
   }
 
   .sample__title {
@@ -149,10 +117,6 @@
 
   .sample__example {
     width: 436px;
-  }
-
-  .sample-item__title {
-    background-color: #eaeaea;
   }
 
   .sample__subtitle {
@@ -164,10 +128,12 @@
     width: auto;
     text-align: start;
     padding-top: 47px;
+    display: flex;
   }
 
   .sample__cost {
-    padding-left: 63px;
+    padding-left: 66px;
+    padding-top: 0;
   }
 
   .sample__stats {

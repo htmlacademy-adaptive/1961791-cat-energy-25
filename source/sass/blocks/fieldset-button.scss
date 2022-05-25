@@ -6,7 +6,7 @@
   text-transform: none;
   text-align: center;
   margin: 0 auto;
-  padding-top: 21px;
+  padding-top: 25px;
   padding-bottom: 32px;
 }
 
@@ -20,11 +20,13 @@
   .fieldset-button {
     display: flex;
     align-items: center;
-    margin-bottom: 72px;
+    margin-bottom: 80px;
+    width: 630px;
   }
 
   .fieldset-button__button {
-    padding: 13px 45px;
+    font-size: 20px;
+    padding: 17px 45px;
     width: 282px;
     margin: 0;
   }
@@ -33,11 +35,23 @@
     font-size: 16px;
     margin-left: 61px;
     padding: 0;
+    padding-bottom: 5px;
+    padding-left: 3px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .fieldset-button {
+    width: 1220px;
+    margin-bottom: 83px;
+  }
+
   .fieldset-button__button {
-    width: 50%;
+    width: 568px;
+  }
+
+  .fieldset-button__text {
+    margin-left: 83px;
+    padding: 0;
   }
 }

@@ -1,19 +1,13 @@
 .main-container__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   width: 280px;
-  padding: 27px 20px 40px;
+  padding: 27px 20px 38px;
   margin: 0 auto;
   text-align: start;
   border-top: 1px solid #ebebeb;
-}
-
-.main-container__form {
-  width: 280px;
-  padding: 0 20px;
-  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -21,36 +15,22 @@
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
-    width: 628px;
-    padding: 65px 30px 143px;
-    margin: 0 auto;
+    width: 708px;
+    padding: 19px 30px 143px;
     border: none;
   }
 
   .main-container__title-form {
+    width: 640px;
     margin: 0 auto;
-    padding: 18px 0 54px;
-  }
-
-  .main-container__form {
-    width: 628px;
-    padding: 0;
+    padding: 18px 70px 54px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-container__title {
     width: 1220px;
-    padding-top: 10px;
-  }
-
-  .main-container__title-form {
-    padding: 87px 0 56px;
-  }
-
-  .main-container__form {
-    width: 1220px;
-    padding: 0 110px;
+    padding-top: 2px;
     margin: 0 auto;
   }
 }

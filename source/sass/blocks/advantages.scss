@@ -5,7 +5,7 @@
 }
 
 .advantages__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -127,7 +127,7 @@
     display: grid;
     grid-template-columns: 246px 246px;
     column-gap: 138px;
-    row-gap: 86px;
+    row-gap: 88px;
     margin-bottom: 54px;
   }
 
@@ -147,11 +147,18 @@
   }
 
   .advantages__title {
-    padding-top: 71px;
+    padding-top: 51px;
   }
 
   .advantages__list {
+    width: 1220px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     column-gap: 75px;
+  }
+
+  .advantages__item {
+    width: 245px;
   }
 }

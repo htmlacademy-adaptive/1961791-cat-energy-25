@@ -7,6 +7,8 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/svg" sizes="32x32" href="./img/favicon32.svg">
+  <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.min.css">
 
 </head>
@@ -63,7 +65,7 @@
               <img class="program__logo-mobile" src="./img/index-can-mobile@1x.png" width="280" height="270"
                 alt="Корм «Кэт энерджи»." srcset="./img/index-can-mobile@2x.png">
             </picture>
-            <a class="program__link button" href="form.html">Подобрать программу</a>
+            <a class="program__link button button-index" href="form.html">Подобрать программу</a>
           </div>
         </div>
       </section>
@@ -109,80 +111,87 @@
             функциональное питание.</p>
         </li>
         <li class="advantages__item">
-          <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
         </li>
       </ul>
     </section>
 
     <div class="sample-row">
-      <section class="sample">
-        <div class="sample__wrapper">
-          <div class="sample__example">
-            <h2 class="sample__title">Живой пример</h2>
-            <p class="sample__subtitle">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-              Slim.
-              Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-              часов в день. </p>
-            <div class="sample__stats">
-              <ul class="sample__list">
-                <li class="sample__item sample-item">
-                  <p class="sample-item__value">5 кг</p>
-                  <p class="sample-item__title">снижение веса</p>
-                </li>
-                <li class="sample__item sample-item">
-                  <p class="sample-item__value">60 дней</p>
-                  <p class="sample-item__title">затрачено времени</p>
-                </li>
-              </ul>
-              <p class="sample__price">Затраты на питание:
-                <span class="sample__cost"> 15 000 РУБ.</span>
-              </p>
+      <div class="sample-row__container">
+        <section class="sample">
+          <div class="sample__wrapper">
+            <div class="sample__example">
+              <h2 class="sample__title">Живой пример</h2>
+              <p class="sample__subtitle">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+                Slim.
+                Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209;прежнему
+                спит по
+                16
+                часов в день. </p>
+              <div class="sample__stats">
+                <ul class="sample__list">
+                  <li class="sample__item sample-item">
+                    <p class="sample-item__value">5 кг</p>
+                    <p class="sample-item__title">снижение веса</p>
+                  </li>
+                  <li class="sample__item sample-item">
+                    <p class="sample-item__value">60 дней</p>
+                    <p class="sample-item__title">затрачено времени</p>
+                  </li>
+                </ul>
+                <p class="sample__price">Затраты на питание:
+                  <span class="sample__cost">15 000 РУБ.</span>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="example">
-        <div class="example__wrapper">
-          <div class="example__item example-slider">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/cat-fat-tablet@1x.png 1x, img/cat-fat-tablet@2x.png 2x">
-              <img class="example-slider__image example-slider__before" src="img/cat-fat-mobile@1x.png" width="280"
-                height="232" alt="Толстая кошка.">
-            </picture>
+        <section class="example">
+          <div class="example__wrapper">
+            <div class="example__item example-slider">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-fat-tablet@1x.png 1x, img/cat-fat-tablet@2x.png 2x">
+                <img class="example-slider__image example-slider__before" src="img/cat-fat-mobile@1x.png" width="280"
+                  height="232" alt="Толстая кошка.">
+              </picture>
 
-            <picture>
-              <source media="(min-width: 768px)"
-                srcset="img/cat-skinny-tablet@1x.png 1x, img/cat-skinny-tablet@2x.png 2x">
-              <img class="example-slider__image example-slider__after" src="img/cat-skinny-tablet@1x.png" width="280"
-                height="232" alt="Худая кошка.">
-            </picture>
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="img/cat-skinny-tablet@1x.png 1x, img/cat-skinny-tablet@2x.png 2x">
+                <img class="example-slider__image example-slider__after" src="img/cat-skinny-tablet@1x.png" width="280"
+                  height="232" alt="Худая кошка.">
+              </picture>
+            </div>
           </div>
-        </div>
 
-        <ul class="example__buttons buttons-list">
-          <li class="buttons-list__item">
-            <button class="buttons-list__button" type="button">Было</button>
-          </li>
-          <li class="buttons-list__item">
-            <button class="buttons-list__bar" type="button">
-              <span class="visually-hidden">Изменить.</span>
-            </button>
-          </li>
-          <li class="buttons-list__item">
-            <button class="buttons-list__button" type="button">Стало</button>
-          </li>
-        </ul>
-      </section>
+          <ul class="example__buttons buttons-list">
+            <li class="buttons-list__item">
+              <button class="buttons-list__button" type="button">Было</button>
+            </li>
+            <li class="buttons-list__item">
+              <div class="buttons-list__row">
+                <button class="buttons-list__bar" type="button">
+                  <span class="visually-hidden">Изменить.</span>
+                </button>
+              </div>
+            </li>
+            <li class="buttons-list__item">
+              <button class="buttons-list__button" type="button">Стало</button>
+            </li>
+          </ul>
+        </section>
+      </div>
     </div>
 
     <section class="contacts">
       <div class="contacts__wrapper">
         <div class="contacts__header">
-          <p class="contacts__welcome">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__welcome">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <p class="contacts__address">ул. Большая
             Конюшенная, д. 19/8
-            Санкт-Петербург</p>
+            <span class="contacts__city">Санкт-Петербург</span>
+          </p>
         </div>
       </div>
       <div class="contacts__maps">

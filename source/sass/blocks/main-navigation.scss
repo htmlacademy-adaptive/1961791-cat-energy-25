@@ -1,5 +1,3 @@
-
-
 .main-navigation__list {
   margin: 0;
   padding: 0;
@@ -13,10 +11,16 @@
     background-color: #ffffff;
     width: 100%;
     right: 0;
+    display: none;
   }
 
-  .main-navigation--closed .site-list {
-    display: none;
+  .main-navigation--nojs {
+    display: block;
+  }
+
+  .main-navigation--closed {
+    display: block;
+    position: absolute;
   }
 
   .main-navigation--opened {
@@ -29,6 +33,7 @@
     display: block;
     position: inherit;
     background-color: transparent;
+    width: 440px;
   }
 
   .main-navigation__toogle {
@@ -38,12 +43,15 @@
   .main-navigation__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    padding-bottom: 13px;
+    padding-bottom: 6px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .main-navigation {
+    width: 478px;
+  }
+
   .main-navigation--index .site-list__link {
     line-height: 30px;
     color: #ffffff;
