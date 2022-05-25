@@ -1,6 +1,7 @@
 @media (min-width: $desktop-width) {
   .sample-row {
     position: relative;
+    padding-bottom: 23px;
 
     &::before {
       position: absolute;

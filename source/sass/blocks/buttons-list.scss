@@ -16,7 +16,7 @@
   }
 }
 
-.buttons-list__bar {
+.buttons-list__row {
   width: 86px;
   height: 14px;
   border: 1px solid #cdcdcd;
@@ -27,25 +27,26 @@
   margin-right: 16px;
   position: relative;
   cursor: pointer;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 36px;
-    height: 6px;
-    top: 3px;
-    left: 6px;
-    background-color: #68b738;
-    border-radius: 6px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
-  }
 }
 
-.buttons-list__bar:hover::before {
+.buttons-list__bar {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 6px;
+  top: 3px;
+  left: 6px;
+  border: none;
+  background-color: #68b738;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.buttons-list__bar:hover {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.19);
 }
 
-.buttons-list__bar:active::before {
+.buttons-list__bar:active {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   border: 1px solid #68b738;
 }
@@ -58,7 +59,7 @@
     background-color: #eaeaea;
   }
 
-  .buttons-list__bar {
+  .buttons-list__row {
     width: 426px;
     height: 6px;
     background-color: #dcdcdc;
@@ -66,26 +67,26 @@
     margin-left: 26px;
     margin-right: 23px;
     position: relative;
+  }
 
-    &::before {
-      position: absolute;
-      content: "";
-      width: 34px;
-      height: 34px;
-      top: -15px;
-      left: 194px;
-      background-color: #ffffff;
-      border: 1px solid #cdcdcd;
-      border-radius: 50%;
-    }
+  .buttons-list__bar {
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 34px;
+    top: -15px;
+    left: 194px;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
 
     &::after {
       position: absolute;
       content: "";
       width: 8px;
       height: 8px;
-      top: 0;
-      left: 208px;
+      top: 12px;
+      left: 12px;
       background-color: #68b738;
       border-radius: 50%;
     }
@@ -95,6 +96,6 @@
 
 @media (min-width: $tablet-width) {
   .buttons-list__button {
-    background-color: #f2f2f2;
+    background-color: transparent;
   }
 }

@@ -4,16 +4,10 @@
   line-height: 36px;
   font-weight: 400;
   width: 280px;
-  padding: 27px 20px 36px;
+  padding: 27px 20px 38px;
   margin: 0 auto;
   text-align: start;
   border-top: 1px solid #ebebeb;
-}
-
-.main-container__form {
-  width: 280px;
-  padding: 0 20px;
-  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -27,30 +21,16 @@
   }
 
   .main-container__title-form {
+    width: 640px;
     margin: 0 auto;
     padding: 18px 70px 54px;
-  }
-
-  .main-container__form {
-    width: 628px;
-    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-container__title {
     width: 1220px;
-    padding-top: 7px;
-    margin: 0 auto;
-  }
-
-  .main-container__title-form {
-    padding: 87px 0 56px;
-  }
-
-  .main-container__form {
-    width: 1220px;
-    padding: 0 110px;
+    padding-top: 2px;
     margin: 0 auto;
   }
 }

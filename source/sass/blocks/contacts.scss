@@ -18,7 +18,7 @@
 
 .contacts__address {
   margin-left: 18px;
-  margin-top: 28px;
+  margin-top: 31px;
 }
 
 .contacts__maps {
@@ -35,7 +35,7 @@
 @media (min-width: $tablet-width) {
   .contacts__header {
     width: 628px;
-    padding: 39px 30px 40px;
+    padding: 43px 30px 40px;
     margin: 0 auto;
     margin-top: 65px;
   }
@@ -44,7 +44,7 @@
     font-size: 20px;
     line-height: 26px;
     width: 177px;
-    margin-top: 16px;
+    margin-top: 10px;
   }
 
   .contacts__address {
@@ -52,7 +52,7 @@
     line-height: 20px;
     width: 160px;
     text-align: end;
-    margin-top: 13px;
+    margin-top: 7px;
   }
 
   .contacts__city {
@@ -83,7 +83,7 @@
     padding: 0;
     margin: 0;
     width: 565px;
-    top: 120px;
+    top: 98px;
     left: 110px;
     background-color: #ffffff;
   }
@@ -95,13 +95,13 @@
   }
 
   .contacts__welcome {
-    padding: 39px 43px 60px 80px;
+    padding: 60px 43px 60px 80px;
     margin: 0;
     width: 163px;
   }
 
   .contacts__address {
-    padding: 36px 80px 60px 43px;
+    padding: 56px 80px 60px 43px;
     margin: 0;
     width: 155px;
     text-align: start;
@@ -110,7 +110,6 @@
   .contacts__maps {
     border: none;
     display: block;
-    width: 1440px;
     margin: 0 auto;
     padding: 0;
   }
