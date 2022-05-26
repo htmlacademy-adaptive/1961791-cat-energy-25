@@ -48,9 +48,9 @@
   }
 
   .example__wrapper {
-    width: 768px;
+    width: 640px;
     margin: 0 auto;
-    padding-left: 30px;
+    padding-left: 46px;
     padding-bottom: 0;
   }
 }
@@ -69,5 +69,10 @@
   .example__buttons {
     justify-content: left;
     margin-left: 97px;
+  }
+
+  .example__wrapper {
+    width: 664px;
+    padding-left: 82px;
   }
 }

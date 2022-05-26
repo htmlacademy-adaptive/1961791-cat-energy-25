@@ -37,6 +37,14 @@
   border: 1px solid #bababa;
 }
 
+.question__control-mark:focus {
+  border: 1px solid #444444;
+}
+
+.question__input-radio[type="radio"]:focus ~ .question__control-mark {
+  border: 1px solid #444444;
+}
+
 .question__input-radio[type="radio"] + .question__control-mark {
   border-radius: 50%;
 }
