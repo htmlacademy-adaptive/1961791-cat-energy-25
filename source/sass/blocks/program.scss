@@ -9,7 +9,6 @@
 
 .program__header {
   width: 280px;
-  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -53,23 +52,25 @@
   }
 
   .program__content {
-    padding-left: 66px;
+    padding-left: 84px;
     padding-top: 17px;
   }
 
   .program__text {
+    width: 283px;
     font-size: 20px;
     line-height: 20px;
     color: #000000;
     text-align: start;
     padding-bottom: 50px;
     padding-left: 3px;
+    margin: 0;
   }
 
   .program__logo-mobile {
     position: absolute;
     left: 50%;
-    transform: translateX(-53%) translateY(-5%);
+    transform: translateX(-50%) translateY(-5%);
     width: 709px;
     height: 609px;
     z-index: -2;
@@ -108,13 +109,12 @@
   }
 
   .program__content {
-    padding-left: 57px;
+    padding-left: 77px;
     padding-top: 38px;
   }
 
   .program__text {
     text-transform: uppercase;
-    margin: 0 auto;
     text-align: start;
     padding-bottom: 54px;
   }
@@ -124,7 +124,7 @@
     height: auto;
     z-index: 1;
     top: -19px;
-    left: 740px;
+    left: 724px;
   }
 
   .program__title {

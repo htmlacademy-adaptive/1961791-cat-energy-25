@@ -9,7 +9,6 @@
 @media (min-width: $tablet-width) {
   .catalog {
     width: 708px;
-    padding-top: 19px;
     margin: 0 auto;
   }
 
@@ -17,7 +16,7 @@
     display: grid;
     grid-template-columns: 324px 324px;
     column-gap: 60px;
-    row-gap: 144px;
+    row-gap: 55px;
   }
 }
 
@@ -31,6 +30,6 @@
   .catalog__list {
     grid-template-columns: 245px 245px 245px 245px;
     column-gap: 80px;
-    row-gap: 143px;
+    row-gap: 77px;
   }
 }

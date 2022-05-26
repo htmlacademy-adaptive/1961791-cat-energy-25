@@ -23,9 +23,24 @@
   }
 
   .example-slider__after {
+    clip: rect(auto, auto, auto, 241px);
+    display: block;
+    width: 535px;
+    bottom: 20px;
+    left: 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example-slider__before {
+    clip: rect(auto, 299px, auto, auto);
+  }
+
+  .example-slider__after {
     clip: rect(auto, auto, auto, 237px);
     display: block;
     width: 535px;
     bottom: 20px;
+    left: 0;
   }
 }
